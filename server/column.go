@@ -14,7 +14,7 @@
 package server
 
 import (
-	"github.com/pingcap/parser/mysql"
+	"github.com/cookieY/parser/mysql"
 )
 
 // ColumnInfo contains information of a column

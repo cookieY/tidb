@@ -18,7 +18,7 @@ import (
 	"strings"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/mysql"
+	"github.com/cookieY/parser/mysql"
 	"github.com/pingcap/tidb/util/testkit"
 )
 

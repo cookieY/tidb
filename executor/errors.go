@@ -14,8 +14,8 @@
 package executor
 
 import (
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/parser/terror"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/parser/terror"
 )
 
 // Error codes that are not mapping to mysql error codes.

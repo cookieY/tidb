@@ -14,8 +14,8 @@
 package privilege
 
 import (
-	"github.com/pingcap/parser/auth"
-	"github.com/pingcap/parser/mysql"
+	"github.com/cookieY/parser/auth"
+	"github.com/cookieY/parser/mysql"
 	"github.com/pingcap/tidb/sessionctx"
 	"github.com/pingcap/tidb/types"
 )

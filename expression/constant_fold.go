@@ -16,7 +16,7 @@ package expression
 import (
 	"context"
 
-	"github.com/pingcap/parser/ast"
+	"github.com/cookieY/parser/ast"
 	"github.com/pingcap/tidb/util/chunk"
 	"github.com/pingcap/tidb/util/logutil"
 	"go.uber.org/zap"

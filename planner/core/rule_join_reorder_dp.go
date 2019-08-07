@@ -16,7 +16,7 @@ package core
 import (
 	"math/bits"
 
-	"github.com/pingcap/parser/ast"
+	"github.com/cookieY/parser/ast"
 	"github.com/pingcap/tidb/expression"
 )
 

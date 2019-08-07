@@ -18,8 +18,8 @@ import (
 	"strings"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/parser/terror"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/parser/terror"
 	"github.com/pingcap/tidb/executor"
 	"github.com/pingcap/tidb/util/testkit"
 )

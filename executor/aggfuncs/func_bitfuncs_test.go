@@ -15,8 +15,8 @@ package aggfuncs_test
 
 import (
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/mysql"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/parser/mysql"
 )
 
 func (s *testSuite) TestMergePartialResult4BitFuncs(c *C) {

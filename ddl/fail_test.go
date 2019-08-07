@@ -18,8 +18,8 @@ import (
 
 	. "github.com/pingcap/check"
 	"github.com/pingcap/failpoint"
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/model"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/parser/model"
 	"github.com/pingcap/tidb/types"
 )
 

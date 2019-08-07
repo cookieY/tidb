@@ -21,7 +21,7 @@ import (
 	"time"
 
 	"github.com/pingcap/parser"
-	"github.com/pingcap/parser/mysql"
+	"github.com/cookieY/parser/mysql"
 	"github.com/pingcap/tidb/util/execdetails"
 	"github.com/pingcap/tidb/util/memory"
 )

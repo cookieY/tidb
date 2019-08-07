@@ -26,7 +26,7 @@ import (
 
 	"github.com/cznic/mathutil"
 	"github.com/pingcap/check"
-	"github.com/pingcap/parser/mysql"
+	"github.com/cookieY/parser/mysql"
 	"github.com/pingcap/tidb/sessionctx/stmtctx"
 	"github.com/pingcap/tidb/types"
 	"github.com/pingcap/tidb/types/json"

@@ -16,7 +16,7 @@ package plugin
 import (
 	"context"
 
-	"github.com/pingcap/parser/auth"
+	"github.com/cookieY/parser/auth"
 	"github.com/pingcap/tidb/sessionctx/variable"
 )
 

@@ -18,7 +18,7 @@ import (
 	"fmt"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/terror"
+	"github.com/cookieY/parser/terror"
 )
 
 type testBufferStoreSuite struct{}

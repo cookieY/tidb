@@ -17,7 +17,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/pingcap/parser/mysql"
+	"github.com/cookieY/parser/mysql"
 )
 
 // ProcessInfo is a struct used for show processlist statement.

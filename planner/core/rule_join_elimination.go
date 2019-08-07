@@ -14,7 +14,7 @@
 package core
 
 import (
-	"github.com/pingcap/parser/ast"
+	"github.com/cookieY/parser/ast"
 	"github.com/pingcap/tidb/expression"
 )
 

@@ -14,7 +14,7 @@ package core
 
 import (
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/model"
+	"github.com/cookieY/parser/model"
 	"github.com/pingcap/tidb/expression"
 	"github.com/pingcap/tidb/sessionctx"
 	"github.com/pingcap/tidb/table/tables"

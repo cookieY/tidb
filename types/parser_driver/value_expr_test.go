@@ -18,7 +18,7 @@ import (
 	"testing"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/format"
+	"github.com/cookieY/parser/format"
 	"github.com/pingcap/tidb/types"
 )
 

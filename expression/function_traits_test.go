@@ -15,7 +15,7 @@ package expression
 
 import (
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/ast"
+	"github.com/cookieY/parser/ast"
 	"github.com/pingcap/tidb/util/testleak"
 )
 

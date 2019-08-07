@@ -13,7 +13,7 @@
 
 package bindinfo
 
-import "github.com/pingcap/parser/ast"
+import "github.com/cookieY/parser/ast"
 
 // BindHint will add hints for originStmt according to hintedStmt' hints.
 func BindHint(originStmt, hintedStmt ast.StmtNode) ast.StmtNode {

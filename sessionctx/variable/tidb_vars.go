@@ -16,7 +16,7 @@ package variable
 import (
 	"os"
 
-	"github.com/pingcap/parser/mysql"
+	"github.com/cookieY/parser/mysql"
 )
 
 /*
