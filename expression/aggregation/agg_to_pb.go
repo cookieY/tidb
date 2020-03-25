@@ -14,10 +14,10 @@
 package aggregation
 
 import (
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/tidb/expression"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/sessionctx/stmtctx"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/tidb/expression"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/sessionctx/stmtctx"
 	"github.com/pingcap/tipb/go-tipb"
 )
 

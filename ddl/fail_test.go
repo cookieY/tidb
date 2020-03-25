@@ -18,9 +18,9 @@ import (
 
 	. "github.com/pingcap/check"
 	"github.com/pingcap/failpoint"
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/tidb/types"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/tidb/types"
 )
 
 func (s *testColumnChangeSuite) TestFailBeforeDecodeArgs(c *C) {
@@ -52,10 +52,10 @@ func (s *testColumnChangeSuite) TestFailBeforeDecodeArgs(c *C) {
 			stateCnt++
 		} else if job.SchemaState == model.StateWriteReorganization {
 			if first {
-				c.Assert(failpoint.Enable("github.com/pingcap/tidb/ddl/errorBeforeDecodeArgs", `return(true)`), IsNil)
+				c.Assert(failpoint.Enable("github.com/cookieY/tidb/ddl/errorBeforeDecodeArgs", `return(true)`), IsNil)
 				first = false
 			} else {
-				c.Assert(failpoint.Disable("github.com/pingcap/tidb/ddl/errorBeforeDecodeArgs"), IsNil)
+				c.Assert(failpoint.Disable("github.com/cookieY/tidb/ddl/errorBeforeDecodeArgs"), IsNil)
 			}
 		}
 	}

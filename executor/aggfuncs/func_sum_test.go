@@ -15,9 +15,9 @@ package aggfuncs_test
 
 import (
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/types"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/types"
 )
 
 func (s *testSuite) TestMergePartialResult4Sum(c *C) {

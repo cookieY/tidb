@@ -15,11 +15,11 @@ package ddl
 
 import (
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/tidb/expression"
-	"github.com/pingcap/tidb/infoschema"
-	"github.com/pingcap/tidb/table"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/tidb/expression"
+	"github.com/cookieY/tidb/infoschema"
+	"github.com/cookieY/tidb/table"
 )
 
 // columnGenerationInDDL is a struct for validating generated columns in DDL.

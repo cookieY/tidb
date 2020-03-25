@@ -28,28 +28,28 @@ import (
 
 	"github.com/cznic/mathutil"
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/charset"
-	"github.com/pingcap/parser/format"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/parser/mysql"
-	field_types "github.com/pingcap/parser/types"
-	"github.com/pingcap/tidb/config"
-	"github.com/pingcap/tidb/expression"
-	"github.com/pingcap/tidb/infoschema"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/meta/autoid"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/sessionctx/variable"
-	"github.com/pingcap/tidb/table"
-	"github.com/pingcap/tidb/table/tables"
-	"github.com/pingcap/tidb/types"
-	driver "github.com/pingcap/tidb/types/parser_driver"
-	"github.com/pingcap/tidb/util"
-	"github.com/pingcap/tidb/util/chunk"
-	"github.com/pingcap/tidb/util/logutil"
-	"github.com/pingcap/tidb/util/mock"
-	"github.com/pingcap/tidb/util/set"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/parser/charset"
+	"github.com/cookieY/parser/format"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/parser/mysql"
+	field_types "github.com/cookieY/parser/types"
+	"github.com/cookieY/tidb/config"
+	"github.com/cookieY/tidb/expression"
+	"github.com/cookieY/tidb/infoschema"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/meta/autoid"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/sessionctx/variable"
+	"github.com/cookieY/tidb/table"
+	"github.com/cookieY/tidb/table/tables"
+	"github.com/cookieY/tidb/types"
+	driver "github.com/cookieY/tidb/types/parser_driver"
+	"github.com/cookieY/tidb/util"
+	"github.com/cookieY/tidb/util/chunk"
+	"github.com/cookieY/tidb/util/logutil"
+	"github.com/cookieY/tidb/util/mock"
+	"github.com/cookieY/tidb/util/set"
 	"go.uber.org/zap"
 )
 
@@ -2630,7 +2630,7 @@ func (d *ddl) getModifiableColumnJob(ctx sessionctx.Context, ident ast.Ident, or
 
 	newCol := table.ToColumn(&model.ColumnInfo{
 		ID: col.ID,
-		// We use this PR(https://github.com/pingcap/tidb/pull/6274) as the dividing line to define whether it is a new version or an old version TiDB.
+		// We use this PR(https://github.com/cookieY/tidb/pull/6274) as the dividing line to define whether it is a new version or an old version TiDB.
 		// The old version TiDB initializes the column's offset and state here.
 		// The new version TiDB doesn't initialize the column's offset and state, and it will do the initialization in run DDL function.
 		// When we do the rolling upgrade the following may happen:

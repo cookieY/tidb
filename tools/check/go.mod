@@ -1,4 +1,4 @@
-module github.com/pingcap/tidb/_tools
+module github.com/cookieY/tidb/_tools
 
 require (
 	github.com/alecthomas/template v0.0.0-20160405071501-a0175ee3bccc // indirect
@@ -20,3 +20,5 @@ require (
 	gopkg.in/yaml.v2 v2.2.2 // indirect
 	honnef.co/go/tools v0.0.0-20180920025451-e3ad64cb4ed3
 )
+
+go 1.13

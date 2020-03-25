@@ -19,11 +19,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/pingcap/parser/auth"
-	"github.com/pingcap/tidb/sessionctx/variable"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util"
-	"github.com/pingcap/tidb/util/chunk"
+	"github.com/cookieY/parser/auth"
+	"github.com/cookieY/tidb/sessionctx/variable"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util"
+	"github.com/cookieY/tidb/util/chunk"
 )
 
 // IDriver opens IContext.

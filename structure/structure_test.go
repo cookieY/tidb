@@ -18,10 +18,10 @@ import (
 	"testing"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/store/mockstore"
-	"github.com/pingcap/tidb/structure"
-	"github.com/pingcap/tidb/util/testleak"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/store/mockstore"
+	"github.com/cookieY/tidb/structure"
+	"github.com/cookieY/tidb/util/testleak"
 )
 
 func TestTxStructure(t *testing.T) {

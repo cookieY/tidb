@@ -18,14 +18,14 @@ import (
 	"fmt"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser"
-	"github.com/pingcap/tidb/domain"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/session"
-	"github.com/pingcap/tidb/store/mockstore"
-	"github.com/pingcap/tidb/store/mockstore/mocktikv"
-	"github.com/pingcap/tidb/util/mock"
-	"github.com/pingcap/tidb/util/testkit"
+	"github.com/cookieY/parser"
+	"github.com/cookieY/tidb/domain"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/session"
+	"github.com/cookieY/tidb/store/mockstore"
+	"github.com/cookieY/tidb/store/mockstore/mocktikv"
+	"github.com/cookieY/tidb/util/mock"
+	"github.com/cookieY/tidb/util/testkit"
 )
 
 type testUpdateSuite struct {

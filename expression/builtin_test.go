@@ -17,14 +17,14 @@ import (
 	"reflect"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/charset"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/chunk"
-	"github.com/pingcap/tidb/util/testleak"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/parser/charset"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/chunk"
+	"github.com/cookieY/tidb/util/testleak"
 )
 
 func evalBuiltinFunc(f builtinFunc, row chunk.Row) (d types.Datum, err error) {

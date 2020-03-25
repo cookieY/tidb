@@ -24,9 +24,9 @@ import (
 	"github.com/pingcap/kvproto/pkg/metapb"
 	"github.com/pingcap/kvproto/pkg/pdpb"
 	"github.com/pingcap/pd/client"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/store/mockoracle"
-	"github.com/pingcap/tidb/store/tikv/tikvrpc"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/store/mockoracle"
+	"github.com/cookieY/tidb/store/tikv/tikvrpc"
 )
 
 var errStopped = errors.New("stopped")

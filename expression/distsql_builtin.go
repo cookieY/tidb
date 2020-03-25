@@ -18,13 +18,13 @@ import (
 	"time"
 
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/sessionctx/stmtctx"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/codec"
-	"github.com/pingcap/tidb/util/mock"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/sessionctx/stmtctx"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/codec"
+	"github.com/cookieY/tidb/util/mock"
 	"github.com/pingcap/tipb/go-tipb"
 )
 

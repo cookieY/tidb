@@ -16,10 +16,10 @@ package chunk
 import (
 	"unsafe"
 
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/types/json"
-	"github.com/pingcap/tidb/util/hack"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/types/json"
+	"github.com/cookieY/tidb/util/hack"
 )
 
 // Row represents a row of data, can be used to access values.

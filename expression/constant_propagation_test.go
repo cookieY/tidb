@@ -17,12 +17,12 @@ import (
 	"fmt"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/tidb/domain"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/util/mock"
-	"github.com/pingcap/tidb/util/testkit"
-	"github.com/pingcap/tidb/util/testleak"
+	"github.com/cookieY/tidb/domain"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/util/mock"
+	"github.com/cookieY/tidb/util/testkit"
+	"github.com/cookieY/tidb/util/testleak"
 )
 
 var _ = Suite(&testSuite{})

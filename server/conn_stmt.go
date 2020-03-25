@@ -43,10 +43,10 @@ import (
 	"time"
 
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/sessionctx/stmtctx"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/hack"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/sessionctx/stmtctx"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/hack"
 )
 
 func (cc *clientConn) handleStmtPrepare(sql string) error {

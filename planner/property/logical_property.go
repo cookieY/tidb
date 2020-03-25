@@ -14,7 +14,7 @@
 package property
 
 import (
-	"github.com/pingcap/tidb/expression"
+	"github.com/cookieY/tidb/expression"
 )
 
 // LogicalProperty stands for logical properties such as schema of expression,

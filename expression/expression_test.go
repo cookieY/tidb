@@ -17,12 +17,12 @@ import (
 	"time"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/sessionctx/stmtctx"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/testleak"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/sessionctx/stmtctx"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/testleak"
 )
 
 func (s *testEvaluatorSuite) TestNewValuesFunc(c *C) {

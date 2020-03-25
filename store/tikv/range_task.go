@@ -21,9 +21,9 @@ import (
 	"time"
 
 	"github.com/pingcap/errors"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/metrics"
-	"github.com/pingcap/tidb/util/logutil"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/metrics"
+	"github.com/cookieY/tidb/util/logutil"
 	"go.uber.org/zap"
 )
 

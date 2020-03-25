@@ -15,8 +15,8 @@ package expression
 
 import (
 	. "github.com/pingcap/check"
-	"github.com/pingcap/tidb/util/chunk"
-	"github.com/pingcap/tidb/util/mock"
+	"github.com/cookieY/tidb/util/chunk"
+	"github.com/cookieY/tidb/util/mock"
 )
 
 func (s *testEvaluatorSuite) TestSimpleRewriter(c *C) {

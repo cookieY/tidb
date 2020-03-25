@@ -21,10 +21,10 @@ import (
 	"time"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/tidb/meta"
-	"github.com/pingcap/tidb/store/mockstore"
-	"github.com/pingcap/tidb/util/testleak"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/tidb/meta"
+	"github.com/cookieY/tidb/store/mockstore"
+	"github.com/cookieY/tidb/util/testleak"
 )
 
 func TestT(t *testing.T) {

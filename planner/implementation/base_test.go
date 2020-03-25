@@ -17,12 +17,12 @@ import (
 	"testing"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/tidb/infoschema"
-	plannercore "github.com/pingcap/tidb/planner/core"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/util/testleak"
+	"github.com/cookieY/parser"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/tidb/infoschema"
+	plannercore "github.com/cookieY/tidb/planner/core"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/util/testleak"
 )
 
 func TestT(t *testing.T) {

@@ -16,13 +16,13 @@ import (
 	"context"
 
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/tidb/expression"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/table/tables"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/chunk"
-	"github.com/pingcap/tidb/util/ranger"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/tidb/expression"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/table/tables"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/chunk"
+	"github.com/cookieY/tidb/util/ranger"
 )
 
 // partitionProcessor rewrites the ast for table partition.

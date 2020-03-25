@@ -19,12 +19,12 @@ import (
 	"fmt"
 
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/sessionctx/variable"
-	"github.com/pingcap/tidb/util/chunk"
-	"github.com/pingcap/tidb/util/sqlexec"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/sessionctx/variable"
+	"github.com/cookieY/tidb/util/chunk"
+	"github.com/cookieY/tidb/util/sqlexec"
 )
 
 const (

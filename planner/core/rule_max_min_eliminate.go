@@ -15,10 +15,10 @@ package core
 import (
 	"context"
 
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/expression"
-	"github.com/pingcap/tidb/types"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/expression"
+	"github.com/cookieY/tidb/types"
 )
 
 // maxMinEliminator tries to eliminate max/min aggregate function.

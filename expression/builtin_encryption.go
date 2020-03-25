@@ -29,13 +29,13 @@ import (
 	"strings"
 
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/auth"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/sessionctx/variable"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/chunk"
-	"github.com/pingcap/tidb/util/encrypt"
+	"github.com/cookieY/parser/auth"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/sessionctx/variable"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/chunk"
+	"github.com/cookieY/tidb/util/encrypt"
 )
 
 var (

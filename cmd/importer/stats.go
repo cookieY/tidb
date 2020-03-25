@@ -21,12 +21,12 @@ import (
 
 	"github.com/pingcap/errors"
 	"github.com/pingcap/log"
-	"github.com/pingcap/parser/model"
-	stats "github.com/pingcap/tidb/statistics"
-	"github.com/pingcap/tidb/statistics/handle"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/chunk"
-	"github.com/pingcap/tidb/util/codec"
+	"github.com/cookieY/parser/model"
+	stats "github.com/cookieY/tidb/statistics"
+	"github.com/cookieY/tidb/statistics/handle"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/chunk"
+	"github.com/cookieY/tidb/util/codec"
 	"go.uber.org/zap"
 )
 

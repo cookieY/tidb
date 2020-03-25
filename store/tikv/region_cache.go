@@ -27,8 +27,8 @@ import (
 	"github.com/pingcap/errors"
 	"github.com/pingcap/kvproto/pkg/metapb"
 	"github.com/pingcap/pd/client"
-	"github.com/pingcap/tidb/metrics"
-	"github.com/pingcap/tidb/util/logutil"
+	"github.com/cookieY/tidb/metrics"
+	"github.com/cookieY/tidb/util/logutil"
 	"go.uber.org/zap"
 )
 

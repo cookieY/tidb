@@ -16,7 +16,7 @@ package ddl
 import (
 	"fmt"
 
-	"github.com/pingcap/parser/ast"
+	"github.com/cookieY/parser/ast"
 )
 
 // AlterAlgorithm is used to store supported alter algorithm.

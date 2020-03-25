@@ -21,9 +21,9 @@ import (
 
 	"github.com/cznic/mathutil"
 	. "github.com/pingcap/check"
-	"github.com/pingcap/tidb/util/logutil"
-	"github.com/pingcap/tidb/util/stringutil"
-	"github.com/pingcap/tidb/util/testleak"
+	"github.com/cookieY/tidb/util/logutil"
+	"github.com/cookieY/tidb/util/stringutil"
+	"github.com/cookieY/tidb/util/testleak"
 )
 
 func TestT(t *testing.T) {

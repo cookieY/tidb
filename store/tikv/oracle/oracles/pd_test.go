@@ -17,8 +17,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pingcap/tidb/store/tikv/oracle"
-	"github.com/pingcap/tidb/store/tikv/oracle/oracles"
+	"github.com/cookieY/tidb/store/tikv/oracle"
+	"github.com/cookieY/tidb/store/tikv/oracle/oracles"
 )
 
 func TestPDOracle_UntilExpired(t *testing.T) {

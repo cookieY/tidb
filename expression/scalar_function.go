@@ -18,17 +18,17 @@ import (
 	"fmt"
 
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/sessionctx/stmtctx"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/types/json"
-	"github.com/pingcap/tidb/util/chunk"
-	"github.com/pingcap/tidb/util/codec"
-	"github.com/pingcap/tidb/util/hack"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/sessionctx/stmtctx"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/types/json"
+	"github.com/cookieY/tidb/util/chunk"
+	"github.com/cookieY/tidb/util/codec"
+	"github.com/cookieY/tidb/util/hack"
 )
 
 // ScalarFunction is the function that returns a value.

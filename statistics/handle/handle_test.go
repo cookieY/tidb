@@ -20,17 +20,17 @@ import (
 
 	. "github.com/pingcap/check"
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/tidb/domain"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/session"
-	"github.com/pingcap/tidb/sessionctx/stmtctx"
-	"github.com/pingcap/tidb/statistics"
-	"github.com/pingcap/tidb/statistics/handle"
-	"github.com/pingcap/tidb/store/mockstore"
-	"github.com/pingcap/tidb/store/tikv/oracle"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/testkit"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/tidb/domain"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/session"
+	"github.com/cookieY/tidb/sessionctx/stmtctx"
+	"github.com/cookieY/tidb/statistics"
+	"github.com/cookieY/tidb/statistics/handle"
+	"github.com/cookieY/tidb/store/mockstore"
+	"github.com/cookieY/tidb/store/tikv/oracle"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/testkit"
 )
 
 func TestT(t *testing.T) {

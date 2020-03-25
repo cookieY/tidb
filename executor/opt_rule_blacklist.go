@@ -16,11 +16,11 @@ package executor
 import (
 	"context"
 
-	plannercore "github.com/pingcap/tidb/planner/core"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/util/chunk"
-	"github.com/pingcap/tidb/util/set"
-	"github.com/pingcap/tidb/util/sqlexec"
+	plannercore "github.com/cookieY/tidb/planner/core"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/util/chunk"
+	"github.com/cookieY/tidb/util/set"
+	"github.com/cookieY/tidb/util/sqlexec"
 )
 
 // ReloadOptRuleBlacklistExec indicates ReloadOptRuleBlacklist executor.

@@ -17,15 +17,15 @@ import (
 	"fmt"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser"
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/charset"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/mock"
-	"github.com/pingcap/tidb/util/testleak"
-	"github.com/pingcap/tidb/util/testutil"
+	"github.com/cookieY/parser"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/parser/charset"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/mock"
+	"github.com/cookieY/tidb/util/testleak"
+	"github.com/cookieY/tidb/util/testutil"
 )
 
 var _ = Suite(&testExpressionSuite{})

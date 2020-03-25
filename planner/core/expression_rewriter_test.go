@@ -15,11 +15,11 @@ package core_test
 
 import (
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/planner/core"
-	"github.com/pingcap/tidb/util/testkit"
-	"github.com/pingcap/tidb/util/testleak"
-	"github.com/pingcap/tidb/util/testutil"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/planner/core"
+	"github.com/cookieY/tidb/util/testkit"
+	"github.com/cookieY/tidb/util/testleak"
+	"github.com/cookieY/tidb/util/testutil"
 )
 
 var _ = Suite(&testExpressionRewriterSuite{})

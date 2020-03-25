@@ -20,7 +20,7 @@ import (
 	"testing"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/tidb/util/logutil"
+	"github.com/cookieY/tidb/util/logutil"
 	tracing "github.com/uber/jaeger-client-go/config"
 )
 

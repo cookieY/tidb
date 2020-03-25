@@ -17,8 +17,8 @@ import (
 	"math"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/types"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/types"
 )
 
 const eps = 1e-9

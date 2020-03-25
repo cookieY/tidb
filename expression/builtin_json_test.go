@@ -15,13 +15,13 @@ package expression
 
 import (
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/types/json"
-	"github.com/pingcap/tidb/util/chunk"
-	"github.com/pingcap/tidb/util/testleak"
-	"github.com/pingcap/tidb/util/testutil"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/types/json"
+	"github.com/cookieY/tidb/util/chunk"
+	"github.com/cookieY/tidb/util/testleak"
+	"github.com/cookieY/tidb/util/testutil"
 )
 
 func (s *testEvaluatorSuite) TestJSONType(c *C) {

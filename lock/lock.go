@@ -14,12 +14,12 @@
 package lock
 
 import (
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/infoschema"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/table"
-	"github.com/pingcap/tidb/util"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/infoschema"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/table"
+	"github.com/cookieY/tidb/util"
 )
 
 // Checker uses to check tables lock.

@@ -17,10 +17,10 @@ import (
 	"math/rand"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/planner/core"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/chunk"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/planner/core"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/chunk"
 )
 
 var _ = Suite(&testSuiteJoiner{})

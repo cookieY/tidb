@@ -17,10 +17,10 @@ import (
 	"testing"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/tidb/session"
-	"github.com/pingcap/tidb/store/mockstore"
-	"github.com/pingcap/tidb/util/testkit"
-	"github.com/pingcap/tidb/util/testleak"
+	"github.com/cookieY/tidb/session"
+	"github.com/cookieY/tidb/store/mockstore"
+	"github.com/cookieY/tidb/util/testkit"
+	"github.com/cookieY/tidb/util/testleak"
 )
 
 func TestT(t *testing.T) {

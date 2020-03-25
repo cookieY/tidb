@@ -20,15 +20,15 @@ import (
 
 	. "github.com/pingcap/check"
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/auth"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/meta"
-	"github.com/pingcap/tidb/meta/autoid"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/table"
-	"github.com/pingcap/tidb/types"
+	"github.com/cookieY/parser/auth"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/meta"
+	"github.com/cookieY/tidb/meta/autoid"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/table"
+	"github.com/cookieY/tidb/types"
 )
 
 var _ = Suite(&testTableSuite{})

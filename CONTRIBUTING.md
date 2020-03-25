@@ -6,7 +6,7 @@ may be different than many other projects you have been involved in. This docume
 ## What is a Contributor?
 
 A Contributor refers to the person who contributes to the following projects:
-- TiDB: https://github.com/pingcap/tidb
+- TiDB: https://github.com/cookieY/tidb
 - TiKV: https://github.com/tikv/tikv
 - TiSpark: https://github.com/pingcap/tispark
 - PD: https://github.com/pingcap/pd
@@ -35,7 +35,7 @@ In order to save reviewers' time, each issue should be filed with template and s
 
 ### Is this a simple bug fix?
 
-Bug fixes usually come with tests. With the help of continuous integration test, patches can be easy to review. Please update the unit tests so that they catch the bug! Please check example [here](https://github.com/pingcap/tidb/pull/2808).
+Bug fixes usually come with tests. With the help of continuous integration test, patches can be easy to review. Please update the unit tests so that they catch the bug! Please check example [here](https://github.com/cookieY/tidb/pull/2808).
 
 ### Is this an architecture improvement?
 
@@ -46,7 +46,7 @@ Some examples of "Architecture" improvements:
 - Decoupling logic or creation of new utilities.
 - Making code more resilient (sleeps, backoffs, reducing flakiness, etc).
 
-If you are improving the quality of code, then justify/state exactly what you are 'cleaning up' in your Pull Request so as to save reviewers' time. An example will be this [pull request](https://github.com/pingcap/tidb/pull/3113).
+If you are improving the quality of code, then justify/state exactly what you are 'cleaning up' in your Pull Request so as to save reviewers' time. An example will be this [pull request](https://github.com/cookieY/tidb/pull/3113).
 
 If you're making code more resilient, test it locally to demonstrate how exactly your patch changes
 things.
@@ -77,11 +77,11 @@ The `GOPATH` is not necessary.
 mkdir tmp
 cd tmp
 echo 'module tidb' > go.mod
-GO111MODULE=on go get github.com/pingcap/tidb@c385cbdcca83eeed283139814a7ea149e3116e66
-GO111MODULE=on go build -o tidb-server github.com/pingcap/tidb/tidb-server
+GO111MODULE=on go get github.com/cookieY/tidb@c385cbdcca83eeed283139814a7ea149e3116e66
+GO111MODULE=on go build -o tidb-server github.com/cookieY/tidb/tidb-server
 ```
 
-The `c385cbdcca83eeed283139814a7ea149e3116e66` can be changed to any other commit hash. Try the latest commit hash [here](https://github.com/pingcap/tidb/commits/master).
+The `c385cbdcca83eeed283139814a7ea149e3116e66` can be changed to any other commit hash. Try the latest commit hash [here](https://github.com/cookieY/tidb/commits/master).
 
 #### For development
 
@@ -102,7 +102,7 @@ TiDB uses [`Go Modules`](https://github.com/golang/go/wiki/Modules) to manage de
 
 ### Step 1: Fork in the cloud
 
-1. Visit https://github.com/pingcap/tidb
+1. Visit https://github.com/cookieY/tidb
 2. Click `Fork` button (top right) to establish a cloud-based fork.
 
 ### Step 2: Clone fork to local storage
@@ -137,7 +137,7 @@ git clone https://github.com/$user/tidb.git
 # or: git clone git@github.com:$user/tidb.git
 
 cd $working_dir/tidb
-git remote add upstream https://github.com/pingcap/tidb.git
+git remote add upstream https://github.com/cookieY/tidb.git
 # or: git remote add upstream git@github.com:pingcap/tidb.git
 
 # Never push to upstream master since you do not have write access.
@@ -147,7 +147,7 @@ git remote set-url --push upstream no_push
 # It should look like:
 # origin    git@github.com:$(user)/tidb.git (fetch)
 # origin    git@github.com:$(user)/tidb.git (push)
-# upstream  https://github.com/pingcap/tidb (fetch)
+# upstream  https://github.com/cookieY/tidb (fetch)
 # upstream  no_push (push)
 git remote -v
 ```

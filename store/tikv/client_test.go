@@ -22,8 +22,8 @@ import (
 	. "github.com/pingcap/check"
 	"github.com/pingcap/errors"
 	"github.com/pingcap/kvproto/pkg/tikvpb"
-	"github.com/pingcap/tidb/config"
-	"github.com/pingcap/tidb/store/tikv/tikvrpc"
+	"github.com/cookieY/tidb/config"
+	"github.com/cookieY/tidb/store/tikv/tikvrpc"
 )
 
 func TestT(t *testing.T) {

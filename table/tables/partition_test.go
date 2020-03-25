@@ -17,13 +17,13 @@ import (
 	"context"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/sessionctx/binloginfo"
-	"github.com/pingcap/tidb/table"
-	"github.com/pingcap/tidb/table/tables"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/testkit"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/sessionctx/binloginfo"
+	"github.com/cookieY/tidb/table"
+	"github.com/cookieY/tidb/table/tables"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/testkit"
 )
 
 func (ts *testSuite) TestPartitionBasic(c *C) {
@@ -125,7 +125,7 @@ PARTITION BY RANGE ( id ) (
 	_, err = tb.AddRecord(ts.se, types.MakeDatums(22))
 	c.Assert(err, IsNil) // Insert into maxvalue partition.
 
-	createTable3 := `create table test.t3 (id int) partition by range (id) 
+	createTable3 := `create table test.t3 (id int) partition by range (id)
 	(
        partition p0 values less than (10)
 	)`

@@ -17,7 +17,7 @@ import (
 	"strconv"
 
 	"github.com/pingcap/errors"
-	"github.com/pingcap/tidb/kv"
+	"github.com/cookieY/tidb/kv"
 )
 
 // Set sets the string value of the key.

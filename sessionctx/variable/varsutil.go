@@ -23,10 +23,10 @@ import (
 	"time"
 
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/config"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/timeutil"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/config"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/timeutil"
 )
 
 // secondsPerYear represents seconds in a normal year. Leap year is not considered here.

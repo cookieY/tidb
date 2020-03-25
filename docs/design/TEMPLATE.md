@@ -6,7 +6,7 @@ This is a template for TiDB's change proposal process, documented [here](./READM
 
 - Author(s):     <!-- Author Name, Co-Author Name, with the link(s) of the GitHub profile page -->
 - Last updated:  <!-- Date -->
-- Discussion at: <!-- https://github.com/pingcap/tidb/issues/XXX -->
+- Discussion at: <!-- https://github.com/cookieY/tidb/issues/XXX -->
 
 ## Abstract
 

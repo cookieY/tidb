@@ -15,8 +15,8 @@ package chunk
 
 import (
 	"github.com/pingcap/check"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/types"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/types"
 )
 
 func (s *testChunkSuite) TestIteratorOnSel(c *check.C) {

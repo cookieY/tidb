@@ -18,13 +18,13 @@ import (
 	"sort"
 
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/tidb/expression"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/table"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/chunk"
-	"github.com/pingcap/tidb/util/set"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/tidb/expression"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/table"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/chunk"
+	"github.com/cookieY/tidb/util/set"
 )
 
 // DirtyDB stores uncommitted write operations for a transaction.

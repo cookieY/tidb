@@ -18,13 +18,13 @@ import (
 	"strings"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/sessionctx/variable"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/chunk"
-	"github.com/pingcap/tidb/util/hack"
-	"github.com/pingcap/tidb/util/testleak"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/sessionctx/variable"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/chunk"
+	"github.com/cookieY/tidb/util/hack"
+	"github.com/cookieY/tidb/util/testleak"
 )
 
 var cryptTests = []struct {

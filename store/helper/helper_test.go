@@ -23,12 +23,12 @@ import (
 	"github.com/gorilla/mux"
 	. "github.com/pingcap/check"
 	"github.com/pingcap/log"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/tidb/store/helper"
-	"github.com/pingcap/tidb/store/mockstore"
-	"github.com/pingcap/tidb/store/mockstore/mocktikv"
-	"github.com/pingcap/tidb/store/tikv"
-	"github.com/pingcap/tidb/util/pdapi"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/tidb/store/helper"
+	"github.com/cookieY/tidb/store/mockstore"
+	"github.com/cookieY/tidb/store/mockstore/mocktikv"
+	"github.com/cookieY/tidb/store/tikv"
+	"github.com/cookieY/tidb/util/pdapi"
 	"go.uber.org/zap"
 )
 

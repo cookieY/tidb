@@ -23,16 +23,16 @@ import (
 
 	. "github.com/pingcap/check"
 	"github.com/pingcap/failpoint"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/config"
-	"github.com/pingcap/tidb/domain"
-	"github.com/pingcap/tidb/executor"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/session"
-	"github.com/pingcap/tidb/sessionctx/variable"
-	"github.com/pingcap/tidb/store/mockstore"
-	"github.com/pingcap/tidb/util/arena"
-	"github.com/pingcap/tidb/util/testleak"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/config"
+	"github.com/cookieY/tidb/domain"
+	"github.com/cookieY/tidb/executor"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/session"
+	"github.com/cookieY/tidb/sessionctx/variable"
+	"github.com/cookieY/tidb/store/mockstore"
+	"github.com/cookieY/tidb/util/arena"
+	"github.com/cookieY/tidb/util/testleak"
 )
 
 type ConnTestSuite struct {
@@ -377,7 +377,7 @@ func mapBelong(m1, m2 map[string]string) bool {
 
 func (ts *ConnTestSuite) TestConnExecutionTimeout(c *C) {
 	//There is no underlying netCon, use failpoint to avoid panic
-	c.Assert(failpoint.Enable("github.com/pingcap/tidb/server/FakeClientConn", "return(1)"), IsNil)
+	c.Assert(failpoint.Enable("github.com/cookieY/tidb/server/FakeClientConn", "return(1)"), IsNil)
 
 	c.Parallel()
 	se, err := session.CreateSession4Test(ts.store)
@@ -433,7 +433,7 @@ func (ts *ConnTestSuite) TestConnExecutionTimeout(c *C) {
 	err = cc.handleQuery(context.Background(), "select /*+ MAX_EXECUTION_TIME(100)*/  * FROM testTable2 WHERE  SLEEP(1);")
 	c.Assert(err, IsNil)
 
-	c.Assert(failpoint.Disable("github.com/pingcap/tidb/server/FakeClientConn"), IsNil)
+	c.Assert(failpoint.Disable("github.com/cookieY/tidb/server/FakeClientConn"), IsNil)
 }
 
 type mockTiDBCtx struct {

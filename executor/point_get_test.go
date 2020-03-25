@@ -17,12 +17,12 @@ import (
 	"fmt"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/tidb/domain"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/session"
-	"github.com/pingcap/tidb/store/mockstore"
-	"github.com/pingcap/tidb/store/tikv"
-	"github.com/pingcap/tidb/util/testkit"
+	"github.com/cookieY/tidb/domain"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/session"
+	"github.com/cookieY/tidb/store/mockstore"
+	"github.com/cookieY/tidb/store/tikv"
+	"github.com/cookieY/tidb/util/testkit"
 )
 
 type testPointGetSuite struct {

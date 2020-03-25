@@ -23,7 +23,7 @@ import (
 	"github.com/google/btree"
 	. "github.com/pingcap/check"
 	"github.com/pingcap/kvproto/pkg/metapb"
-	"github.com/pingcap/tidb/store/mockstore/mocktikv"
+	"github.com/cookieY/tidb/store/mockstore/mocktikv"
 )
 
 type testRegionCacheSuite struct {

@@ -19,9 +19,9 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/types/json"
-	"github.com/pingcap/tidb/util/hack"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/types/json"
+	"github.com/cookieY/tidb/util/hack"
 )
 
 // AppendDuration appends a duration value into this Column.

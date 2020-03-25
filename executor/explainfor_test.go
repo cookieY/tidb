@@ -17,10 +17,10 @@ import (
 	"fmt"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/auth"
-	"github.com/pingcap/tidb/planner/core"
-	"github.com/pingcap/tidb/util"
-	"github.com/pingcap/tidb/util/testkit"
+	"github.com/cookieY/parser/auth"
+	"github.com/cookieY/tidb/planner/core"
+	"github.com/cookieY/tidb/util"
+	"github.com/cookieY/tidb/util/testkit"
 )
 
 // mockSessionManager is a mocked session manager which is used for test.

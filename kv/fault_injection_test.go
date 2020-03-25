@@ -18,8 +18,8 @@ import (
 
 	. "github.com/pingcap/check"
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/kv"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/kv"
 )
 
 type testFaultInjectionSuite struct{}

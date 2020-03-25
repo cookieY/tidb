@@ -16,10 +16,10 @@ package sqlexec
 import (
 	"context"
 
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/sessionctx/variable"
-	"github.com/pingcap/tidb/util/chunk"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/sessionctx/variable"
+	"github.com/cookieY/tidb/util/chunk"
 )
 
 // RestrictedSQLExecutor is an interface provides executing restricted sql statement.

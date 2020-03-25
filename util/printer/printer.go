@@ -18,10 +18,10 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/config"
-	"github.com/pingcap/tidb/util/israce"
-	"github.com/pingcap/tidb/util/logutil"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/config"
+	"github.com/cookieY/tidb/util/israce"
+	"github.com/cookieY/tidb/util/logutil"
 	"go.uber.org/zap"
 )
 

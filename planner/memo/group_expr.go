@@ -16,7 +16,7 @@ package memo
 import (
 	"fmt"
 
-	plannercore "github.com/pingcap/tidb/planner/core"
+	plannercore "github.com/cookieY/tidb/planner/core"
 )
 
 // GroupExpr is used to store all the logically equivalent expressions which

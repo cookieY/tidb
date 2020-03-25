@@ -18,15 +18,15 @@ import (
 
 	. "github.com/pingcap/check"
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/domain"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/session"
-	"github.com/pingcap/tidb/store/mockstore"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/types/json"
-	"github.com/pingcap/tidb/util/chunk"
-	"github.com/pingcap/tidb/util/testleak"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/domain"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/session"
+	"github.com/cookieY/tidb/store/mockstore"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/types/json"
+	"github.com/cookieY/tidb/util/chunk"
+	"github.com/cookieY/tidb/util/testleak"
 )
 
 var _ = Suite(&testUtilSuite{})

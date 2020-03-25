@@ -22,24 +22,24 @@ import (
 
 	. "github.com/pingcap/check"
 	"github.com/pingcap/failpoint"
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/domain"
-	"github.com/pingcap/tidb/executor"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/session"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/statistics"
-	"github.com/pingcap/tidb/statistics/handle"
-	"github.com/pingcap/tidb/store/mockstore"
-	"github.com/pingcap/tidb/store/mockstore/mocktikv"
-	"github.com/pingcap/tidb/store/tikv"
-	"github.com/pingcap/tidb/store/tikv/tikvrpc"
-	"github.com/pingcap/tidb/table"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/codec"
-	"github.com/pingcap/tidb/util/testkit"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/domain"
+	"github.com/cookieY/tidb/executor"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/session"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/statistics"
+	"github.com/cookieY/tidb/statistics/handle"
+	"github.com/cookieY/tidb/store/mockstore"
+	"github.com/cookieY/tidb/store/mockstore/mocktikv"
+	"github.com/cookieY/tidb/store/tikv"
+	"github.com/cookieY/tidb/store/tikv/tikvrpc"
+	"github.com/cookieY/tidb/table"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/codec"
+	"github.com/cookieY/tidb/util/testkit"
 )
 
 var _ = Suite(&testFastAnalyze{})
@@ -471,10 +471,10 @@ func (s *testSuite1) TestFailedAnalyzeRequest(c *C) {
 	tk.MustExec("use test")
 	tk.MustExec("drop table if exists t")
 	tk.MustExec("create table t(a int primary key, b int, index index_b(b))")
-	c.Assert(failpoint.Enable("github.com/pingcap/tidb/executor/buildStatsFromResult", `return(true)`), IsNil)
+	c.Assert(failpoint.Enable("github.com/cookieY/tidb/executor/buildStatsFromResult", `return(true)`), IsNil)
 	_, err := tk.Exec("analyze table t")
 	c.Assert(err.Error(), Equals, "mock buildStatsFromResult error")
-	c.Assert(failpoint.Disable("github.com/pingcap/tidb/executor/buildStatsFromResult"), IsNil)
+	c.Assert(failpoint.Disable("github.com/cookieY/tidb/executor/buildStatsFromResult"), IsNil)
 }
 
 func (s *testSuite1) TestExtractTopN(c *C) {

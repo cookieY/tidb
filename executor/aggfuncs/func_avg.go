@@ -15,12 +15,12 @@ package aggfuncs
 
 import (
 	"github.com/cznic/mathutil"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/chunk"
-	"github.com/pingcap/tidb/util/hack"
-	"github.com/pingcap/tidb/util/set"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/chunk"
+	"github.com/cookieY/tidb/util/hack"
+	"github.com/cookieY/tidb/util/set"
 )
 
 // All the following avg function implementations return the decimal result,

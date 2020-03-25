@@ -21,12 +21,12 @@ import (
 
 	. "github.com/pingcap/check"
 	"github.com/pingcap/failpoint"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/sessionctx/stmtctx"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/codec"
-	"github.com/pingcap/tidb/util/testleak"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/sessionctx/stmtctx"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/codec"
+	"github.com/cookieY/tidb/util/testleak"
 )
 
 func TestT(t *testing.T) {
@@ -319,9 +319,9 @@ func (s *testTableCodecSuite) TestCutKey(c *C) {
 }
 
 func (s *testTableCodecSuite) TestDecodeBadDecical(c *C) {
-	c.Assert(failpoint.Enable("github.com/pingcap/tidb/util/codec/errorInDecodeDecimal", `return(true)`), IsNil)
+	c.Assert(failpoint.Enable("github.com/cookieY/tidb/util/codec/errorInDecodeDecimal", `return(true)`), IsNil)
 	defer func() {
-		c.Assert(failpoint.Disable("github.com/pingcap/tidb/util/codec/errorInDecodeDecimal"), IsNil)
+		c.Assert(failpoint.Disable("github.com/cookieY/tidb/util/codec/errorInDecodeDecimal"), IsNil)
 	}()
 	dec := types.NewDecFromStringForTest("0.111")
 	b, err := codec.EncodeDecimal(nil, dec, 0, 0)

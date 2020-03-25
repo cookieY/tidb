@@ -18,7 +18,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pingcap/tidb/store/tikv/oracle/oracles"
+	"github.com/cookieY/tidb/store/tikv/oracle/oracles"
 )
 
 func TestLocalOracle(t *testing.T) {

@@ -15,7 +15,7 @@ package server
 
 import (
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/mysql"
+	"github.com/cookieY/parser/mysql"
 )
 
 type ColumnTestSuite struct {

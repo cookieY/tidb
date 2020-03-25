@@ -18,8 +18,8 @@ import (
 	"strings"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/util/testkit"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/util/testkit"
 )
 
 func (s *testSuite1) TestRevokeGlobal(c *C) {

@@ -19,13 +19,13 @@ import (
 	"strings"
 
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser"
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/tidb/ddl"
-	_ "github.com/pingcap/tidb/planner/core"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/mock"
+	"github.com/cookieY/parser"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/tidb/ddl"
+	_ "github.com/cookieY/tidb/planner/core"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/mock"
 	log "github.com/sirupsen/logrus"
 )
 

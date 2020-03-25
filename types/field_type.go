@@ -16,11 +16,11 @@ package types
 import (
 	"strconv"
 
-	"github.com/pingcap/parser/charset"
-	"github.com/pingcap/parser/mysql"
-	ast "github.com/pingcap/parser/types"
-	"github.com/pingcap/tidb/types/json"
-	utilMath "github.com/pingcap/tidb/util/math"
+	"github.com/cookieY/parser/charset"
+	"github.com/cookieY/parser/mysql"
+	ast "github.com/cookieY/parser/types"
+	"github.com/cookieY/tidb/types/json"
+	utilMath "github.com/cookieY/tidb/util/math"
 )
 
 // UnspecifiedLength is unspecified length.

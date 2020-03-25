@@ -20,11 +20,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/pingcap/parser"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/util/execdetails"
-	"github.com/pingcap/tidb/util/memory"
+	"github.com/cookieY/parser"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/util/execdetails"
+	"github.com/cookieY/tidb/util/memory"
 	"go.uber.org/zap"
 )
 

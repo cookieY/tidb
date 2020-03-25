@@ -14,7 +14,7 @@
 package core
 
 import (
-	"github.com/pingcap/tidb/expression"
+	"github.com/cookieY/tidb/expression"
 )
 
 func (ds *DataSource) preparePossibleProperties() [][]*expression.Column {

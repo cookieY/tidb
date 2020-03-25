@@ -17,10 +17,10 @@ import (
 	"time"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/types/json"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/types/json"
 )
 
 func (s *testSuite) TestMergePartialResult4FirstRow(c *C) {

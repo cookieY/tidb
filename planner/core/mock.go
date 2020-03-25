@@ -14,14 +14,14 @@
 package core
 
 import (
-	"github.com/pingcap/parser/auth"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/domain"
-	"github.com/pingcap/tidb/infoschema"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/mock"
+	"github.com/cookieY/parser/auth"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/domain"
+	"github.com/cookieY/tidb/infoschema"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/mock"
 )
 
 func newLongType() types.FieldType {

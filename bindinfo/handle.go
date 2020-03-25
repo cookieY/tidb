@@ -22,15 +22,15 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/pingcap/parser"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/metrics"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/store/tikv/oracle"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/logutil"
-	"github.com/pingcap/tidb/util/sqlexec"
+	"github.com/cookieY/parser"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/metrics"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/store/tikv/oracle"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/logutil"
+	"github.com/cookieY/tidb/util/sqlexec"
 )
 
 // BindHandle is used to handle all global sql bind operations.

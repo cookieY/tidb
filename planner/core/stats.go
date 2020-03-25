@@ -16,11 +16,11 @@ package core
 import (
 	"math"
 
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/tidb/expression"
-	"github.com/pingcap/tidb/planner/property"
-	"github.com/pingcap/tidb/statistics"
-	"github.com/pingcap/tidb/util/logutil"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/tidb/expression"
+	"github.com/cookieY/tidb/planner/property"
+	"github.com/cookieY/tidb/statistics"
+	"github.com/cookieY/tidb/util/logutil"
 	"go.uber.org/zap"
 )
 

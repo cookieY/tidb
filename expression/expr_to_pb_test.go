@@ -20,13 +20,13 @@ import (
 
 	. "github.com/pingcap/check"
 	"github.com/pingcap/failpoint"
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/charset"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/sessionctx/stmtctx"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/codec"
-	"github.com/pingcap/tidb/util/mock"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/parser/charset"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/sessionctx/stmtctx"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/codec"
+	"github.com/cookieY/tidb/util/mock"
 	"github.com/pingcap/tipb/go-tipb"
 )
 
@@ -453,8 +453,8 @@ func (s *testEvaluatorSuite) TestPushDownSwitcher(c *C) {
 		}
 	}
 
-	c.Assert(failpoint.Enable("github.com/pingcap/tidb/expression/PushDownTestSwitcher", `return("all")`), IsNil)
-	defer func() { c.Assert(failpoint.Disable("github.com/pingcap/tidb/expression/PushDownTestSwitcher"), IsNil) }()
+	c.Assert(failpoint.Enable("github.com/cookieY/tidb/expression/PushDownTestSwitcher", `return("all")`), IsNil)
+	defer func() { c.Assert(failpoint.Disable("github.com/cookieY/tidb/expression/PushDownTestSwitcher"), IsNil) }()
 
 	pbExprs := ExpressionsToPBList(sc, funcs, client)
 	c.Assert(len(pbExprs), Equals, len(cases))
@@ -463,7 +463,7 @@ func (s *testEvaluatorSuite) TestPushDownSwitcher(c *C) {
 	}
 
 	// All disabled
-	c.Assert(failpoint.Enable("github.com/pingcap/tidb/expression/PushDownTestSwitcher", `return("")`), IsNil)
+	c.Assert(failpoint.Enable("github.com/cookieY/tidb/expression/PushDownTestSwitcher", `return("")`), IsNil)
 	pbExprs = ExpressionsToPBList(sc, funcs, client)
 	c.Assert(len(pbExprs), Equals, len(cases))
 	for i, pbExpr := range pbExprs {
@@ -472,7 +472,7 @@ func (s *testEvaluatorSuite) TestPushDownSwitcher(c *C) {
 
 	// Partial enabled
 	fpexpr := fmt.Sprintf(`return("%s")`, strings.Join(enabled, ","))
-	c.Assert(failpoint.Enable("github.com/pingcap/tidb/expression/PushDownTestSwitcher", fpexpr), IsNil)
+	c.Assert(failpoint.Enable("github.com/cookieY/tidb/expression/PushDownTestSwitcher", fpexpr), IsNil)
 	pbExprs = ExpressionsToPBList(sc, funcs, client)
 	c.Assert(len(pbExprs), Equals, len(cases))
 	for i, pbExpr := range pbExprs {
@@ -600,8 +600,8 @@ func (s *testEvaluatorSuite) TestImplicitArgs(c *C) {
 	client := new(mock.Client)
 	dg := new(dataGen4Expr2PbTest)
 
-	c.Assert(failpoint.Enable("github.com/pingcap/tidb/expression/PushDownTestSwitcher", `return("all")`), IsNil)
-	defer func() { c.Assert(failpoint.Disable("github.com/pingcap/tidb/expression/PushDownTestSwitcher"), IsNil) }()
+	c.Assert(failpoint.Enable("github.com/cookieY/tidb/expression/PushDownTestSwitcher", `return("all")`), IsNil)
+	defer func() { c.Assert(failpoint.Disable("github.com/cookieY/tidb/expression/PushDownTestSwitcher"), IsNil) }()
 
 	pc := PbConverter{client: client, sc: sc}
 

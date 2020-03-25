@@ -2,12 +2,12 @@ package aggregation
 
 import (
 	"github.com/pingcap/check"
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/expression"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/mock"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/expression"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/mock"
 )
 
 var _ = check.Suite(&testBaseFuncSuite{})

@@ -18,14 +18,14 @@ import (
 
 	. "github.com/pingcap/check"
 	"github.com/pingcap/failpoint"
-	"github.com/pingcap/tidb/domain"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/session"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/store/mockstore"
-	"github.com/pingcap/tidb/util/mock"
-	"github.com/pingcap/tidb/util/testkit"
-	"github.com/pingcap/tidb/util/testleak"
+	"github.com/cookieY/tidb/domain"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/session"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/store/mockstore"
+	"github.com/cookieY/tidb/util/mock"
+	"github.com/cookieY/tidb/util/testkit"
+	"github.com/cookieY/tidb/util/testleak"
 )
 
 func TestT(t *testing.T) {
@@ -77,9 +77,9 @@ func (s *testFailPointSuit) TestColumnPruningError(c *C) {
 	tk.MustQuery(`select a from t;`).Check(testkit.Rows(`1`))
 
 	// test the injected fail point
-	c.Assert(failpoint.Enable("github.com/pingcap/tidb/planner/core/enableGetUsedListErr", `return(true)`), IsNil)
+	c.Assert(failpoint.Enable("github.com/cookieY/tidb/planner/core/enableGetUsedListErr", `return(true)`), IsNil)
 	defer func() {
-		c.Assert(failpoint.Disable("github.com/pingcap/tidb/planner/core/enableGetUsedListErr"), IsNil)
+		c.Assert(failpoint.Disable("github.com/cookieY/tidb/planner/core/enableGetUsedListErr"), IsNil)
 	}()
 	err := tk.ExecToErr(`select a from t;`)
 	c.Assert(err.Error(), Equals, "getUsedList failed, triggered by gofail enableGetUsedListErr")

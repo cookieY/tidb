@@ -16,9 +16,9 @@ package chunk
 import (
 	"sort"
 
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/types/json"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/types/json"
 )
 
 // CompareFunc is a function to compare the two values in Row, the two columns must have the same type.

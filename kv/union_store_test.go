@@ -15,8 +15,8 @@ package kv
 
 import (
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/util/testleak"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/util/testleak"
 )
 
 var _ = Suite(&testUnionStoreSuite{})

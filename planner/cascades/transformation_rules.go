@@ -14,8 +14,8 @@
 package cascades
 
 import (
-	plannercore "github.com/pingcap/tidb/planner/core"
-	"github.com/pingcap/tidb/planner/memo"
+	plannercore "github.com/cookieY/tidb/planner/core"
+	"github.com/cookieY/tidb/planner/memo"
 )
 
 // Transformation defines the interface for the transformation rules.

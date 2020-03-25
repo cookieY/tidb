@@ -18,13 +18,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/sessionctx/variable"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/types/parser_driver"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/sessionctx/variable"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/types/parser_driver"
 )
 
 func boolToInt64(v bool) int64 {

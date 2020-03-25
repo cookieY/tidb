@@ -18,12 +18,12 @@ import (
 
 	"github.com/cznic/mathutil"
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/tidb/executor/aggfuncs"
-	"github.com/pingcap/tidb/expression"
-	"github.com/pingcap/tidb/planner/core"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/util/chunk"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/tidb/executor/aggfuncs"
+	"github.com/cookieY/tidb/expression"
+	"github.com/cookieY/tidb/planner/core"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/util/chunk"
 )
 
 // WindowExec is the executor for window functions.

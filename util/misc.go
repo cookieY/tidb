@@ -19,10 +19,10 @@ import (
 	"time"
 
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/util/logutil"
+	"github.com/cookieY/parser"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/util/logutil"
 	"go.uber.org/zap"
 )
 

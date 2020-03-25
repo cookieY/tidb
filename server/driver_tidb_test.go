@@ -15,11 +15,11 @@ package server
 
 import (
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/charset"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/types"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/parser/charset"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/types"
 )
 
 type tidbResultSetTestSuite struct{}
@@ -43,7 +43,7 @@ func createColumnByTypeAndLen(tp byte, len uint32) *ColumnInfo {
 	}
 }
 func (ts tidbResultSetTestSuite) TestConvertColumnInfo(c *C) {
-	// Test "mysql.TypeBit", for: https://github.com/pingcap/tidb/issues/5405.
+	// Test "mysql.TypeBit", for: https://github.com/cookieY/tidb/issues/5405.
 	resultField := ast.ResultField{
 		Column: &model.ColumnInfo{
 			Name:   model.NewCIStr("a"),
@@ -66,7 +66,7 @@ func (ts tidbResultSetTestSuite) TestConvertColumnInfo(c *C) {
 	colInfo := convertColumnInfo(&resultField)
 	c.Assert(colInfo, DeepEquals, createColumnByTypeAndLen(mysql.TypeBit, 1))
 
-	// Test "mysql.TypeTiny", for: https://github.com/pingcap/tidb/issues/5405.
+	// Test "mysql.TypeTiny", for: https://github.com/cookieY/tidb/issues/5405.
 	resultField = ast.ResultField{
 		Column: &model.ColumnInfo{
 			Name:   model.NewCIStr("a"),

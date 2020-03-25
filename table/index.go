@@ -14,11 +14,11 @@
 package table
 
 import (
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/sessionctx/stmtctx"
-	"github.com/pingcap/tidb/types"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/sessionctx/stmtctx"
+	"github.com/cookieY/tidb/types"
 )
 
 // IndexIterator is the interface for iterator of index data on KV store.

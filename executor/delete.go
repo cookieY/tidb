@@ -16,12 +16,12 @@ package executor
 import (
 	"context"
 
-	"github.com/pingcap/tidb/expression"
-	plannercore "github.com/pingcap/tidb/planner/core"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/table"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/chunk"
+	"github.com/cookieY/tidb/expression"
+	plannercore "github.com/cookieY/tidb/planner/core"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/table"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/chunk"
 )
 
 // DeleteExec represents a delete executor.

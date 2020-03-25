@@ -25,10 +25,10 @@ import (
 	"github.com/pingcap/failpoint"
 	"github.com/pingcap/kvproto/pkg/errorpb"
 	"github.com/pingcap/kvproto/pkg/kvrpcpb"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/metrics"
-	"github.com/pingcap/tidb/store/tikv/tikvrpc"
-	"github.com/pingcap/tidb/util/logutil"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/metrics"
+	"github.com/cookieY/tidb/store/tikv/tikvrpc"
+	"github.com/cookieY/tidb/util/logutil"
 )
 
 // ShuttingDown is a flag to indicate tidb-server is exiting (Ctrl+C signal

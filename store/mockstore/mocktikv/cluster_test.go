@@ -22,13 +22,13 @@ import (
 
 	. "github.com/pingcap/check"
 	"github.com/pingcap/kvproto/pkg/kvrpcpb"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/sessionctx/stmtctx"
-	"github.com/pingcap/tidb/store/mockstore"
-	"github.com/pingcap/tidb/store/mockstore/mocktikv"
-	"github.com/pingcap/tidb/tablecodec"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/codec"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/sessionctx/stmtctx"
+	"github.com/cookieY/tidb/store/mockstore"
+	"github.com/cookieY/tidb/store/mockstore/mocktikv"
+	"github.com/cookieY/tidb/tablecodec"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/codec"
 )
 
 var _ = Suite(&testClusterSuite{})

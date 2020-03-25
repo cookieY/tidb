@@ -16,7 +16,7 @@ package kvcache
 import (
 	"container/list"
 
-	"github.com/pingcap/tidb/util/memory"
+	"github.com/cookieY/tidb/util/memory"
 )
 
 // Key is the interface that every key in LRU Cache should implement.

@@ -17,11 +17,11 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/parser/opcode"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/chunk"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/parser/opcode"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/chunk"
 	"github.com/pingcap/tipb/go-tipb"
 )
 

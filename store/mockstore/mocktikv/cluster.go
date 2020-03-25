@@ -24,8 +24,8 @@ import (
 	"github.com/golang/protobuf/proto"
 	"github.com/pingcap/kvproto/pkg/kvrpcpb"
 	"github.com/pingcap/kvproto/pkg/metapb"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/tablecodec"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/tablecodec"
 )
 
 // Cluster simulates a TiKV cluster. It focuses on management and the change of

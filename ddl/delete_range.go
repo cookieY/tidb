@@ -22,14 +22,14 @@ import (
 	"sync/atomic"
 
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/ddl/util"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/tablecodec"
-	"github.com/pingcap/tidb/util/logutil"
-	"github.com/pingcap/tidb/util/sqlexec"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/ddl/util"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/tablecodec"
+	"github.com/cookieY/tidb/util/logutil"
+	"github.com/cookieY/tidb/util/sqlexec"
 	"go.uber.org/zap"
 )
 

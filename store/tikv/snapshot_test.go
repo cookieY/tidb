@@ -20,8 +20,8 @@ import (
 
 	. "github.com/pingcap/check"
 	pb "github.com/pingcap/kvproto/pkg/kvrpcpb"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/util/logutil"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/util/logutil"
 	"go.uber.org/zap"
 )
 

@@ -23,23 +23,23 @@ import (
 
 	. "github.com/pingcap/check"
 	"github.com/pingcap/failpoint"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/ddl"
-	ddlutil "github.com/pingcap/tidb/ddl/util"
-	"github.com/pingcap/tidb/domain"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/meta"
-	"github.com/pingcap/tidb/meta/autoid"
-	plannercore "github.com/pingcap/tidb/planner/core"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/sessionctx/variable"
-	"github.com/pingcap/tidb/table"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/chunk"
-	"github.com/pingcap/tidb/util/testkit"
-	"github.com/pingcap/tidb/util/testutil"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/ddl"
+	ddlutil "github.com/cookieY/tidb/ddl/util"
+	"github.com/cookieY/tidb/domain"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/meta"
+	"github.com/cookieY/tidb/meta/autoid"
+	plannercore "github.com/cookieY/tidb/planner/core"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/sessionctx/variable"
+	"github.com/cookieY/tidb/table"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/chunk"
+	"github.com/cookieY/tidb/util/testkit"
+	"github.com/cookieY/tidb/util/testutil"
 )
 
 func (s *testSuite3) TestTruncateTable(c *C) {
@@ -88,7 +88,7 @@ func (s *testSuite3) TestCreateTable(c *C) {
 	// Test "if not exist"
 	tk.MustExec("CREATE TABLE if not exists test(id INT NOT NULL DEFAULT 1, name varchar(255), PRIMARY KEY(id));")
 
-	// Testcase for https://github.com/pingcap/tidb/issues/312
+	// Testcase for https://github.com/cookieY/tidb/issues/312
 	tk.MustExec(`create table issue312_1 (c float(24));`)
 	tk.MustExec(`create table issue312_2 (c float(25));`)
 	rs, err := tk.Exec(`desc issue312_1`)
@@ -411,9 +411,9 @@ func (s *testSuite3) TestDefaultDBAfterDropCurDB(c *C) {
 }
 
 func (s *testSuite3) TestRenameTable(c *C) {
-	c.Assert(failpoint.Enable("github.com/pingcap/tidb/meta/autoid/mockAutoIDChange", `return(true)`), IsNil)
+	c.Assert(failpoint.Enable("github.com/cookieY/tidb/meta/autoid/mockAutoIDChange", `return(true)`), IsNil)
 	defer func() {
-		c.Assert(failpoint.Disable("github.com/pingcap/tidb/meta/autoid/mockAutoIDChange"), IsNil)
+		c.Assert(failpoint.Disable("github.com/cookieY/tidb/meta/autoid/mockAutoIDChange"), IsNil)
 	}()
 	tk := testkit.NewTestKit(c, s.store)
 
@@ -889,7 +889,7 @@ func (s *testSuite3) TestSetDDLErrorCountLimit(c *C) {
 }
 
 // Test issue #9205, fix the precision problem for time type default values
-// See https://github.com/pingcap/tidb/issues/9205 for details
+// See https://github.com/cookieY/tidb/issues/9205 for details
 func (s *testSuite3) TestIssue9205(c *C) {
 	tk := testkit.NewTestKit(c, s.store)
 	tk.MustExec("use test")

@@ -16,10 +16,10 @@ package bindinfo
 import (
 	"unsafe"
 
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/tidb/metrics"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/chunk"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/tidb/metrics"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/chunk"
 )
 
 const (

@@ -24,21 +24,21 @@ import (
 	. "github.com/pingcap/check"
 	"github.com/pingcap/errors"
 	"github.com/pingcap/log"
-	"github.com/pingcap/parser"
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/ddl"
-	"github.com/pingcap/tidb/domain"
-	"github.com/pingcap/tidb/executor"
-	"github.com/pingcap/tidb/infoschema"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/session"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/store/mockstore"
-	"github.com/pingcap/tidb/util/admin"
-	"github.com/pingcap/tidb/util/sqlexec"
-	"github.com/pingcap/tidb/util/testkit"
+	"github.com/cookieY/parser"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/ddl"
+	"github.com/cookieY/tidb/domain"
+	"github.com/cookieY/tidb/executor"
+	"github.com/cookieY/tidb/infoschema"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/session"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/store/mockstore"
+	"github.com/cookieY/tidb/util/admin"
+	"github.com/cookieY/tidb/util/sqlexec"
+	"github.com/cookieY/tidb/util/testkit"
 	"go.uber.org/zap"
 )
 
@@ -466,7 +466,7 @@ func (s *testStateChangeSuite) TestAppendEnum(c *C) {
 	checkResult(result, testkit.Rows(expected...))
 }
 
-// https://github.com/pingcap/tidb/pull/6249 fixes the following two test cases.
+// https://github.com/cookieY/tidb/pull/6249 fixes the following two test cases.
 func (s *testStateChangeSuite) TestWriteOnlyWriteNULL(c *C) {
 	sqls := make([]sqlWithErr, 1)
 	sqls[0] = sqlWithErr{"insert t set c1 = 'c1_new', c3 = '2019-02-12', c4 = 8 on duplicate key update c1 = values(c1)", nil}
@@ -636,7 +636,7 @@ func (s *testStateChangeSuite) TestShowIndex(c *C) {
 	c.Assert(err, IsNil)
 
 	_, err = s.se.Execute(context.Background(), `create table tr(
-		id int, name varchar(50), 
+		id int, name varchar(50),
 		purchased date
 	)
 	partition by range( year(purchased) ) (

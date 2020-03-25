@@ -18,10 +18,10 @@ import (
 	"unicode/utf8"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/config"
-	"github.com/pingcap/tidb/table"
-	"github.com/pingcap/tidb/util/testkit"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/config"
+	"github.com/cookieY/tidb/table"
+	"github.com/cookieY/tidb/util/testkit"
 )
 
 const (

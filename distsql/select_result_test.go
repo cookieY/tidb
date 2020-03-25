@@ -17,9 +17,9 @@ import (
 	"fmt"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/tidb/sessionctx/stmtctx"
-	"github.com/pingcap/tidb/util/execdetails"
-	"github.com/pingcap/tidb/util/mock"
+	"github.com/cookieY/tidb/sessionctx/stmtctx"
+	"github.com/cookieY/tidb/util/execdetails"
+	"github.com/cookieY/tidb/util/mock"
 	"github.com/pingcap/tipb/go-tipb"
 )
 

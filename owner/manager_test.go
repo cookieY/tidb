@@ -23,11 +23,11 @@ import (
 	"github.com/coreos/etcd/clientv3/concurrency"
 	"github.com/coreos/etcd/integration"
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/terror"
-	. "github.com/pingcap/tidb/ddl"
-	"github.com/pingcap/tidb/owner"
-	"github.com/pingcap/tidb/store/mockstore"
-	"github.com/pingcap/tidb/util/logutil"
+	"github.com/cookieY/parser/terror"
+	. "github.com/cookieY/tidb/ddl"
+	"github.com/cookieY/tidb/owner"
+	"github.com/cookieY/tidb/store/mockstore"
+	"github.com/cookieY/tidb/util/logutil"
 	goctx "golang.org/x/net/context"
 )
 

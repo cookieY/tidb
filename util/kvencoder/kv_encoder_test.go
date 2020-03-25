@@ -20,21 +20,21 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pingcap/tidb/meta/autoid"
-	"github.com/pingcap/tidb/store/mockstore"
+	"github.com/cookieY/tidb/meta/autoid"
+	"github.com/cookieY/tidb/store/mockstore"
 
 	. "github.com/pingcap/check"
 	"github.com/pingcap/errors"
-	"github.com/pingcap/tidb/domain"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/session"
-	"github.com/pingcap/tidb/sessionctx/stmtctx"
-	"github.com/pingcap/tidb/structure"
-	"github.com/pingcap/tidb/tablecodec"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/codec"
-	"github.com/pingcap/tidb/util/testkit"
-	"github.com/pingcap/tidb/util/testleak"
+	"github.com/cookieY/tidb/domain"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/session"
+	"github.com/cookieY/tidb/sessionctx/stmtctx"
+	"github.com/cookieY/tidb/structure"
+	"github.com/cookieY/tidb/tablecodec"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/codec"
+	"github.com/cookieY/tidb/util/testkit"
+	"github.com/cookieY/tidb/util/testleak"
 )
 
 var _ = Suite(&testKvEncoderSuite{})
@@ -720,7 +720,7 @@ func (s *testKvEncoderSuite) TestRefCount(c *C) {
 	c.Assert(refCount, Equals, int64(0))
 }
 
-// TestExoticDatabaseName checks if https://github.com/pingcap/tidb/issues/9532
+// TestExoticDatabaseName checks if https://github.com/cookieY/tidb/issues/9532
 // is fixed.
 func (s *testKvEncoderSuite) TestExoticDatabaseName(c *C) {
 	encoder1, err := New("pay-service_micro_db", nil)

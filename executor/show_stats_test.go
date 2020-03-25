@@ -15,8 +15,8 @@ package executor_test
 
 import (
 	. "github.com/pingcap/check"
-	"github.com/pingcap/tidb/statistics"
-	"github.com/pingcap/tidb/util/testkit"
+	"github.com/cookieY/tidb/statistics"
+	"github.com/cookieY/tidb/util/testkit"
 )
 
 type testShowStatsSuite struct {

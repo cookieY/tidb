@@ -14,10 +14,10 @@
 package cascades
 
 import (
-	plannercore "github.com/pingcap/tidb/planner/core"
-	"github.com/pingcap/tidb/planner/implementation"
-	"github.com/pingcap/tidb/planner/memo"
-	"github.com/pingcap/tidb/planner/property"
+	plannercore "github.com/cookieY/tidb/planner/core"
+	"github.com/cookieY/tidb/planner/implementation"
+	"github.com/cookieY/tidb/planner/memo"
+	"github.com/cookieY/tidb/planner/property"
 )
 
 // Enforcer defines the interface for enforcer rules.

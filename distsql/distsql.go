@@ -18,11 +18,11 @@ import (
 	"fmt"
 
 	"github.com/pingcap/errors"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/metrics"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/statistics"
-	"github.com/pingcap/tidb/types"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/metrics"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/statistics"
+	"github.com/cookieY/tidb/types"
 )
 
 // XAPI error codes.

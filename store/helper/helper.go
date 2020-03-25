@@ -27,14 +27,14 @@ import (
 
 	"github.com/pingcap/errors"
 	"github.com/pingcap/kvproto/pkg/kvrpcpb"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/store/tikv"
-	"github.com/pingcap/tidb/store/tikv/tikvrpc"
-	"github.com/pingcap/tidb/tablecodec"
-	"github.com/pingcap/tidb/util/codec"
-	"github.com/pingcap/tidb/util/logutil"
-	"github.com/pingcap/tidb/util/pdapi"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/store/tikv"
+	"github.com/cookieY/tidb/store/tikv/tikvrpc"
+	"github.com/cookieY/tidb/tablecodec"
+	"github.com/cookieY/tidb/util/codec"
+	"github.com/cookieY/tidb/util/logutil"
+	"github.com/cookieY/tidb/util/pdapi"
 	"go.uber.org/zap"
 )
 

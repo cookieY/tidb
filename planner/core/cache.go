@@ -17,11 +17,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/sessionctx/variable"
-	"github.com/pingcap/tidb/util/codec"
-	"github.com/pingcap/tidb/util/hack"
-	"github.com/pingcap/tidb/util/kvcache"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/sessionctx/variable"
+	"github.com/cookieY/tidb/util/codec"
+	"github.com/cookieY/tidb/util/hack"
+	"github.com/cookieY/tidb/util/kvcache"
 	atomic2 "go.uber.org/atomic"
 )
 

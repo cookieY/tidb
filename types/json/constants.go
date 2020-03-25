@@ -17,8 +17,8 @@ import (
 	"encoding/binary"
 	"unicode/utf8"
 
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/parser/terror"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/parser/terror"
 )
 
 // TypeCode indicates JSON type.

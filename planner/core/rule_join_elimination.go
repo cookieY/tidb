@@ -16,9 +16,9 @@ package core
 import (
 	"context"
 
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/tidb/expression"
-	"github.com/pingcap/tidb/util/set"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/tidb/expression"
+	"github.com/cookieY/tidb/util/set"
 )
 
 type outerJoinEliminator struct {

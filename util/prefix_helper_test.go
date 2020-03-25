@@ -19,11 +19,11 @@ import (
 	"testing"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/store/mockstore"
-	"github.com/pingcap/tidb/util"
-	"github.com/pingcap/tidb/util/testleak"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/store/mockstore"
+	"github.com/cookieY/tidb/util"
+	"github.com/cookieY/tidb/util/testleak"
 )
 
 const (

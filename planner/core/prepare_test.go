@@ -20,14 +20,14 @@ import (
 	"time"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/executor"
-	"github.com/pingcap/tidb/infoschema"
-	"github.com/pingcap/tidb/metrics"
-	"github.com/pingcap/tidb/planner/core"
-	"github.com/pingcap/tidb/sessionctx/variable"
-	"github.com/pingcap/tidb/util/testkit"
-	"github.com/pingcap/tidb/util/testleak"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/executor"
+	"github.com/cookieY/tidb/infoschema"
+	"github.com/cookieY/tidb/metrics"
+	"github.com/cookieY/tidb/planner/core"
+	"github.com/cookieY/tidb/sessionctx/variable"
+	"github.com/cookieY/tidb/util/testkit"
+	"github.com/cookieY/tidb/util/testleak"
 	"github.com/prometheus/client_golang/prometheus"
 	dto "github.com/prometheus/client_model/go"
 )
@@ -265,7 +265,7 @@ func (s *testPrepareSuite) TestPrepareOverMaxPreparedStmtCount(c *C) {
 	}
 }
 
-// unit test for issue https://github.com/pingcap/tidb/issues/8518
+// unit test for issue https://github.com/cookieY/tidb/issues/8518
 func (s *testPrepareSuite) TestPrepareTableAsNameOnGroupByWithCache(c *C) {
 	defer testleak.AfterTest(c)()
 	store, dom, err := newStoreWithBootstrap()
@@ -320,7 +320,7 @@ func readGaugeInt(g prometheus.Gauge) int {
 	return int(mm.GetGauge().GetValue())
 }
 
-// unit test for issue https://github.com/pingcap/tidb/issues/9478
+// unit test for issue https://github.com/cookieY/tidb/issues/9478
 func (s *testPrepareSuite) TestPrepareWithWindowFunction(c *C) {
 	defer testleak.AfterTest(c)()
 	store, dom, err := newStoreWithBootstrap()

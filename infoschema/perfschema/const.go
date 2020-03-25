@@ -13,7 +13,7 @@
 
 package perfschema
 
-import "github.com/pingcap/tidb/util"
+import "github.com/cookieY/tidb/util"
 
 // Performance Schema Name.
 const (

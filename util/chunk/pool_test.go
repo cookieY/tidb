@@ -17,8 +17,8 @@ import (
 	"testing"
 
 	"github.com/pingcap/check"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/types"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/types"
 )
 
 var _ = check.Suite(&poolTestSuite{})

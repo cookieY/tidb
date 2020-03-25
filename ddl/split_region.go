@@ -14,10 +14,10 @@
 package ddl
 
 import (
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/tablecodec"
-	"github.com/pingcap/tidb/util/logutil"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/tablecodec"
+	"github.com/cookieY/tidb/util/logutil"
 	"go.uber.org/zap"
 )
 

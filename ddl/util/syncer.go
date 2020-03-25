@@ -28,10 +28,10 @@ import (
 	"github.com/coreos/etcd/etcdserver/api/v3rpc/rpctypes"
 	"github.com/pingcap/errors"
 	"github.com/pingcap/failpoint"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/metrics"
-	"github.com/pingcap/tidb/owner"
-	"github.com/pingcap/tidb/util/logutil"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/metrics"
+	"github.com/cookieY/tidb/owner"
+	"github.com/cookieY/tidb/util/logutil"
 	"go.uber.org/zap"
 )
 

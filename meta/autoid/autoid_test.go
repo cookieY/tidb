@@ -22,11 +22,11 @@ import (
 	. "github.com/pingcap/check"
 	"github.com/pingcap/errors"
 	"github.com/pingcap/failpoint"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/meta"
-	"github.com/pingcap/tidb/meta/autoid"
-	"github.com/pingcap/tidb/store/mockstore"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/meta"
+	"github.com/cookieY/tidb/meta/autoid"
+	"github.com/cookieY/tidb/store/mockstore"
 )
 
 func TestT(t *testing.T) {
@@ -40,9 +40,9 @@ type testSuite struct {
 }
 
 func (*testSuite) TestT(c *C) {
-	c.Assert(failpoint.Enable("github.com/pingcap/tidb/meta/autoid/mockAutoIDChange", `return(true)`), IsNil)
+	c.Assert(failpoint.Enable("github.com/cookieY/tidb/meta/autoid/mockAutoIDChange", `return(true)`), IsNil)
 	defer func() {
-		c.Assert(failpoint.Disable("github.com/pingcap/tidb/meta/autoid/mockAutoIDChange"), IsNil)
+		c.Assert(failpoint.Disable("github.com/cookieY/tidb/meta/autoid/mockAutoIDChange"), IsNil)
 	}()
 
 	store, err := mockstore.NewMockTikvStore()
@@ -136,9 +136,9 @@ func (*testSuite) TestT(c *C) {
 }
 
 func (*testSuite) TestUnsignedAutoid(c *C) {
-	c.Assert(failpoint.Enable("github.com/pingcap/tidb/meta/autoid/mockAutoIDChange", `return(true)`), IsNil)
+	c.Assert(failpoint.Enable("github.com/cookieY/tidb/meta/autoid/mockAutoIDChange", `return(true)`), IsNil)
 	defer func() {
-		c.Assert(failpoint.Disable("github.com/pingcap/tidb/meta/autoid/mockAutoIDChange"), IsNil)
+		c.Assert(failpoint.Disable("github.com/cookieY/tidb/meta/autoid/mockAutoIDChange"), IsNil)
 	}()
 
 	store, err := mockstore.NewMockTikvStore()

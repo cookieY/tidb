@@ -14,8 +14,8 @@
 package aggfuncs
 
 import (
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/util/chunk"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/util/chunk"
 )
 
 // ntile divides the partition into n ranked groups and returns the group number a row belongs to.

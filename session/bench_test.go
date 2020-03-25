@@ -22,11 +22,11 @@ import (
 	"time"
 
 	"github.com/pingcap/log"
-	"github.com/pingcap/tidb/domain"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/store/mockstore"
-	"github.com/pingcap/tidb/util/logutil"
-	"github.com/pingcap/tidb/util/sqlexec"
+	"github.com/cookieY/tidb/domain"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/store/mockstore"
+	"github.com/cookieY/tidb/util/logutil"
+	"github.com/cookieY/tidb/util/sqlexec"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 )

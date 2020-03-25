@@ -18,14 +18,14 @@ import (
 	"time"
 
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/metrics"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/statistics"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/chunk"
-	"github.com/pingcap/tidb/util/codec"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/metrics"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/statistics"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/chunk"
+	"github.com/cookieY/tidb/util/codec"
 	"github.com/pingcap/tipb/go-tipb"
 )
 
@@ -71,7 +71,7 @@ func (r *streamResult) readDataFromResponse(ctx context.Context, resp kv.Respons
 	startTime := time.Now()
 	resultSubset, err := resp.Next(ctx)
 	// TODO: Add a label to distinguish between success or failure.
-	// https://github.com/pingcap/tidb/issues/11397
+	// https://github.com/cookieY/tidb/issues/11397
 	metrics.DistSQLQueryHistgram.WithLabelValues(r.label, r.sqlType).Observe(time.Since(startTime).Seconds())
 	if err != nil {
 		return false, err

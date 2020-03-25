@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 # Usage: check-leaktest.sh
-# It needs to run under the github.com/pingcap/tidb directory.
+# It needs to run under the github.com/cookieY/tidb directory.
 
 set -e
 

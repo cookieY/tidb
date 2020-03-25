@@ -15,8 +15,8 @@ package cascades
 
 import (
 	. "github.com/pingcap/check"
-	"github.com/pingcap/tidb/expression"
-	"github.com/pingcap/tidb/planner/property"
+	"github.com/cookieY/tidb/expression"
+	"github.com/cookieY/tidb/planner/property"
 )
 
 func (s *testCascadesSuite) TestGetEnforcerRules(c *C) {

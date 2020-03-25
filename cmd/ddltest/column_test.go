@@ -21,11 +21,11 @@ import (
 	"time"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/terror"
-	plannercore "github.com/pingcap/tidb/planner/core"
-	"github.com/pingcap/tidb/session"
-	"github.com/pingcap/tidb/table"
-	"github.com/pingcap/tidb/types"
+	"github.com/cookieY/parser/terror"
+	plannercore "github.com/cookieY/tidb/planner/core"
+	"github.com/cookieY/tidb/session"
+	"github.com/cookieY/tidb/table"
+	"github.com/cookieY/tidb/types"
 	log "github.com/sirupsen/logrus"
 	goctx "golang.org/x/net/context"
 )

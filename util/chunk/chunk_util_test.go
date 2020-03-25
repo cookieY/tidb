@@ -17,7 +17,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/pingcap/tidb/types"
+	"github.com/cookieY/tidb/types"
 )
 
 func getChk() (*Chunk, *Chunk, []bool) {

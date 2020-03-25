@@ -14,10 +14,10 @@
 package perfschema
 
 import (
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/tidb/infoschema"
-	"github.com/pingcap/tidb/meta/autoid"
-	"github.com/pingcap/tidb/table"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/tidb/infoschema"
+	"github.com/cookieY/tidb/meta/autoid"
+	"github.com/cookieY/tidb/table"
 )
 
 // perfSchemaTable stands for the fake table all its data is in the memory.

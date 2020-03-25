@@ -18,7 +18,7 @@ import (
 	"time"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/tidb/util/testleak"
+	"github.com/cookieY/tidb/util/testleak"
 )
 
 var _ = Suite(&testTxnSuite{})

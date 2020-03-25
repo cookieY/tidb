@@ -18,11 +18,11 @@ import (
 	"math"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/tidb/executor"
-	"github.com/pingcap/tidb/metrics"
-	plannercore "github.com/pingcap/tidb/planner/core"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/testkit"
+	"github.com/cookieY/tidb/executor"
+	"github.com/cookieY/tidb/metrics"
+	plannercore "github.com/cookieY/tidb/planner/core"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/testkit"
 	dto "github.com/prometheus/client_model/go"
 )
 

@@ -17,10 +17,10 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/tidb/expression"
-	"github.com/pingcap/tidb/expression/aggregation"
-	"github.com/pingcap/tidb/statistics"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/tidb/expression"
+	"github.com/cookieY/tidb/expression/aggregation"
+	"github.com/cookieY/tidb/statistics"
 )
 
 // ExplainInfo implements PhysicalPlan interface.

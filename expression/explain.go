@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/chunk"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/chunk"
 )
 
 // ExplainInfo implements the Expression interface.

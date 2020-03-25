@@ -17,9 +17,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/sessionctx/stmtctx"
-	"github.com/pingcap/tidb/store/tikv/oracle"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/sessionctx/stmtctx"
+	"github.com/cookieY/tidb/store/tikv/oracle"
 )
 
 // ProcessInfo is a struct used for show processlist statement.

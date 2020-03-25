@@ -17,12 +17,12 @@ import (
 	"time"
 
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/domain"
-	"github.com/pingcap/tidb/infoschema"
-	"github.com/pingcap/tidb/statistics"
-	"github.com/pingcap/tidb/store/tikv/oracle"
-	"github.com/pingcap/tidb/types"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/domain"
+	"github.com/cookieY/tidb/infoschema"
+	"github.com/cookieY/tidb/statistics"
+	"github.com/cookieY/tidb/store/tikv/oracle"
+	"github.com/cookieY/tidb/types"
 )
 
 func (e *ShowExec) fetchShowStatsMeta() error {

@@ -16,12 +16,12 @@ package planner
 import (
 	"context"
 
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/tidb/infoschema"
-	"github.com/pingcap/tidb/planner/cascades"
-	plannercore "github.com/pingcap/tidb/planner/core"
-	"github.com/pingcap/tidb/privilege"
-	"github.com/pingcap/tidb/sessionctx"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/tidb/infoschema"
+	"github.com/cookieY/tidb/planner/cascades"
+	plannercore "github.com/cookieY/tidb/planner/core"
+	"github.com/cookieY/tidb/privilege"
+	"github.com/cookieY/tidb/sessionctx"
 )
 
 // Optimize does optimization and creates a Plan.

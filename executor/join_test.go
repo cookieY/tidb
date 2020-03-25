@@ -19,8 +19,8 @@ import (
 	"time"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/tidb/session"
-	"github.com/pingcap/tidb/util/testkit"
+	"github.com/cookieY/tidb/session"
+	"github.com/cookieY/tidb/util/testkit"
 )
 
 func (s *testSuite2) TestJoinPanic(c *C) {

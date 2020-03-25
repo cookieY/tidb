@@ -21,13 +21,13 @@ import (
 	"context"
 
 	"github.com/opentracing/opentracing-go"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/meta/autoid"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/types"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/meta/autoid"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/types"
 )
 
 // Type , the type of table, store data in different ways.

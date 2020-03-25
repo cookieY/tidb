@@ -16,10 +16,10 @@ package core
 import (
 	"fmt"
 
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/tidb/expression"
-	"github.com/pingcap/tidb/expression/aggregation"
-	"github.com/pingcap/tidb/sessionctx"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/tidb/expression"
+	"github.com/cookieY/tidb/expression/aggregation"
+	"github.com/cookieY/tidb/sessionctx"
 )
 
 // injectExtraProjection is used to extract the expressions of specific

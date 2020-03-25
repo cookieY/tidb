@@ -15,7 +15,7 @@ package core_test
 
 import (
 	. "github.com/pingcap/check"
-	"github.com/pingcap/tidb/util/testkit"
+	"github.com/cookieY/tidb/util/testkit"
 )
 
 var _ = Suite(&testIntegrationSuite{})

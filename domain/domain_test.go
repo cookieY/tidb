@@ -24,18 +24,18 @@ import (
 	. "github.com/pingcap/check"
 	"github.com/pingcap/errors"
 	"github.com/pingcap/failpoint"
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/ddl"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/meta"
-	"github.com/pingcap/tidb/metrics"
-	"github.com/pingcap/tidb/sessionctx/variable"
-	"github.com/pingcap/tidb/store/mockstore"
-	"github.com/pingcap/tidb/store/tikv/oracle"
-	"github.com/pingcap/tidb/util/mock"
-	"github.com/pingcap/tidb/util/testleak"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/ddl"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/meta"
+	"github.com/cookieY/tidb/metrics"
+	"github.com/cookieY/tidb/sessionctx/variable"
+	"github.com/cookieY/tidb/store/mockstore"
+	"github.com/cookieY/tidb/store/tikv/oracle"
+	"github.com/cookieY/tidb/util/mock"
+	"github.com/cookieY/tidb/util/testleak"
 	dto "github.com/prometheus/client_model/go"
 )
 
@@ -93,7 +93,7 @@ func TestInfo(t *testing.T) {
 	// Mock new DDL and init the schema syncer with etcd client.
 	goCtx := context.Background()
 	dom.ddl = ddl.NewDDL(goCtx, dom.GetEtcdClient(), s, dom.infoHandle, nil, ddlLease, nil)
-	err = failpoint.Enable("github.com/pingcap/tidb/domain/MockReplaceDDL", `return(true)`)
+	err = failpoint.Enable("github.com/cookieY/tidb/domain/MockReplaceDDL", `return(true)`)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -101,7 +101,7 @@ func TestInfo(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	err = failpoint.Disable("github.com/pingcap/tidb/domain/MockReplaceDDL")
+	err = failpoint.Disable("github.com/cookieY/tidb/domain/MockReplaceDDL")
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -131,7 +131,7 @@ func TestInfo(t *testing.T) {
 	}
 
 	// Test the scene where syncer.Done() gets the information.
-	err = failpoint.Enable("github.com/pingcap/tidb/ddl/util/ErrorMockSessionDone", `return(true)`)
+	err = failpoint.Enable("github.com/cookieY/tidb/ddl/util/ErrorMockSessionDone", `return(true)`)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -148,7 +148,7 @@ func TestInfo(t *testing.T) {
 	if !syncerStarted {
 		t.Fatal("start syncer failed")
 	}
-	err = failpoint.Disable("github.com/pingcap/tidb/ddl/util/ErrorMockSessionDone")
+	err = failpoint.Disable("github.com/cookieY/tidb/ddl/util/ErrorMockSessionDone")
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -258,7 +258,7 @@ func (*testSuite) TestT(c *C) {
 
 	succ := dom.SchemaValidator.Check(ts, schemaVer, nil)
 	c.Assert(succ, Equals, ResultSucc)
-	c.Assert(failpoint.Enable("github.com/pingcap/tidb/domain/ErrorMockReloadFailed", `return(true)`), IsNil)
+	c.Assert(failpoint.Enable("github.com/cookieY/tidb/domain/ErrorMockReloadFailed", `return(true)`), IsNil)
 	err = dom.Reload()
 	c.Assert(err, NotNil)
 	succ = dom.SchemaValidator.Check(ts, schemaVer, nil)
@@ -270,7 +270,7 @@ func (*testSuite) TestT(c *C) {
 	ts = ver.Ver
 	succ = dom.SchemaValidator.Check(ts, schemaVer, nil)
 	c.Assert(succ, Equals, ResultUnknown)
-	c.Assert(failpoint.Disable("github.com/pingcap/tidb/domain/ErrorMockReloadFailed"), IsNil)
+	c.Assert(failpoint.Disable("github.com/cookieY/tidb/domain/ErrorMockReloadFailed"), IsNil)
 	err = dom.Reload()
 	c.Assert(err, IsNil)
 	succ = dom.SchemaValidator.Check(ts, schemaVer, nil)

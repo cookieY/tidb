@@ -24,11 +24,11 @@ import (
 	"unicode"
 
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/sessionctx/stmtctx"
-	"github.com/pingcap/tidb/util/logutil"
-	tidbMath "github.com/pingcap/tidb/util/math"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/sessionctx/stmtctx"
+	"github.com/cookieY/tidb/util/logutil"
+	tidbMath "github.com/cookieY/tidb/util/math"
 )
 
 // Time format without fractional seconds precision.

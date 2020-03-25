@@ -14,8 +14,8 @@
 package core
 
 import (
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/tidb/expression"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/tidb/expression"
 )
 
 // AggregateFuncExtractor visits Expr tree.

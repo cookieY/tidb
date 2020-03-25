@@ -25,15 +25,15 @@ import (
 	"time"
 
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser"
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/domain"
-	"github.com/pingcap/tidb/session"
-	"github.com/pingcap/tidb/statistics/handle"
-	"github.com/pingcap/tidb/store/tikv"
-	"github.com/pingcap/tidb/util/sqlexec"
+	"github.com/cookieY/parser"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/domain"
+	"github.com/cookieY/tidb/session"
+	"github.com/cookieY/tidb/statistics/handle"
+	"github.com/cookieY/tidb/store/tikv"
+	"github.com/cookieY/tidb/util/sqlexec"
 )
 
 type sqlInfoFetcher struct {

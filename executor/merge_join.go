@@ -18,11 +18,11 @@ import (
 	"fmt"
 
 	"github.com/pingcap/errors"
-	"github.com/pingcap/tidb/expression"
-	"github.com/pingcap/tidb/sessionctx/stmtctx"
-	"github.com/pingcap/tidb/util/chunk"
-	"github.com/pingcap/tidb/util/memory"
-	"github.com/pingcap/tidb/util/stringutil"
+	"github.com/cookieY/tidb/expression"
+	"github.com/cookieY/tidb/sessionctx/stmtctx"
+	"github.com/cookieY/tidb/util/chunk"
+	"github.com/cookieY/tidb/util/memory"
+	"github.com/cookieY/tidb/util/stringutil"
 )
 
 // MergeJoinExec implements the merge join algorithm.

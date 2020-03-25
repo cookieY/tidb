@@ -18,12 +18,12 @@ import (
 	"fmt"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser"
-	"github.com/pingcap/tidb/executor"
-	"github.com/pingcap/tidb/planner"
-	plannercore "github.com/pingcap/tidb/planner/core"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/util/testkit"
+	"github.com/cookieY/parser"
+	"github.com/cookieY/tidb/executor"
+	"github.com/cookieY/tidb/planner"
+	plannercore "github.com/cookieY/tidb/planner/core"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/util/testkit"
 )
 
 func (s *testSuite4) TestStmtLabel(c *C) {

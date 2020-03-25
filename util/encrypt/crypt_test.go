@@ -15,7 +15,7 @@ package encrypt
 
 import (
 	. "github.com/pingcap/check"
-	"github.com/pingcap/tidb/util/testleak"
+	"github.com/cookieY/tidb/util/testleak"
 )
 
 func (s *testEncryptSuite) TestSQLDecode(c *C) {

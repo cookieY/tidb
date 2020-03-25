@@ -24,20 +24,20 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/charset"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/parser/mysql"
-	field_types "github.com/pingcap/parser/types"
-	"github.com/pingcap/tidb/config"
-	"github.com/pingcap/tidb/expression"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/sessionctx/stmtctx"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/types/json"
-	"github.com/pingcap/tidb/util/hack"
-	"github.com/pingcap/tidb/util/logutil"
-	"github.com/pingcap/tidb/util/timeutil"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/parser/charset"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/parser/mysql"
+	field_types "github.com/cookieY/parser/types"
+	"github.com/cookieY/tidb/config"
+	"github.com/cookieY/tidb/expression"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/sessionctx/stmtctx"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/types/json"
+	"github.com/cookieY/tidb/util/hack"
+	"github.com/cookieY/tidb/util/logutil"
+	"github.com/cookieY/tidb/util/timeutil"
 	"go.uber.org/zap"
 )
 
@@ -118,7 +118,7 @@ func FindOnUpdateCols(cols []*Column) []*Column {
 }
 
 // truncateTrailingSpaces trancates trailing spaces for CHAR[(M)] column.
-// fix: https://github.com/pingcap/tidb/issues/3660
+// fix: https://github.com/cookieY/tidb/issues/3660
 func truncateTrailingSpaces(v *types.Datum) {
 	if v.Kind() == types.KindNull {
 		return
@@ -271,7 +271,7 @@ func NewColDesc(col *Column) *ColDesc {
 		extra = "auto_increment"
 	} else if mysql.HasOnUpdateNowFlag(col.Flag) {
 		//in order to match the rules of mysql 8.0.16 version
-		//see https://github.com/pingcap/tidb/issues/10337
+		//see https://github.com/cookieY/tidb/issues/10337
 		extra = "DEFAULT_GENERATED on update CURRENT_TIMESTAMP" + OptionalFsp(&col.FieldType)
 	} else if col.IsGenerated() {
 		if col.GeneratedStored {

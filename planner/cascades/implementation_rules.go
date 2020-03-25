@@ -14,9 +14,9 @@
 package cascades
 
 import (
-	plannercore "github.com/pingcap/tidb/planner/core"
-	"github.com/pingcap/tidb/planner/memo"
-	"github.com/pingcap/tidb/planner/property"
+	plannercore "github.com/cookieY/tidb/planner/core"
+	"github.com/cookieY/tidb/planner/memo"
+	"github.com/cookieY/tidb/planner/property"
 )
 
 // ImplementationRule defines the interface for implementation rules.

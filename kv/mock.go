@@ -16,7 +16,7 @@ package kv
 import (
 	"context"
 
-	"github.com/pingcap/tidb/store/tikv/oracle"
+	"github.com/cookieY/tidb/store/tikv/oracle"
 )
 
 // mockTxn is a txn that returns a retryAble error when called Commit.

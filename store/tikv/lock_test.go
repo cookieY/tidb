@@ -22,8 +22,8 @@ import (
 
 	. "github.com/pingcap/check"
 	"github.com/pingcap/kvproto/pkg/kvrpcpb"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/store/tikv/tikvrpc"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/store/tikv/tikvrpc"
 )
 
 type testLockSuite struct {

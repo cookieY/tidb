@@ -15,7 +15,7 @@ package linux_test
 import (
 	"testing"
 
-	"github.com/pingcap/tidb/util/sys/linux"
+	"github.com/cookieY/tidb/util/sys/linux"
 )
 
 func TestGetOSVersion(t *testing.T) {

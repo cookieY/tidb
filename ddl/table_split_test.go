@@ -20,13 +20,13 @@ import (
 	"time"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/tidb/ddl"
-	"github.com/pingcap/tidb/session"
-	"github.com/pingcap/tidb/store/mockstore"
-	"github.com/pingcap/tidb/store/tikv"
-	"github.com/pingcap/tidb/tablecodec"
-	"github.com/pingcap/tidb/util/testkit"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/tidb/ddl"
+	"github.com/cookieY/tidb/session"
+	"github.com/cookieY/tidb/store/mockstore"
+	"github.com/cookieY/tidb/store/tikv"
+	"github.com/cookieY/tidb/tablecodec"
+	"github.com/cookieY/tidb/util/testkit"
 )
 
 type testDDLTableSplitSuite struct{}

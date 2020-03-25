@@ -17,17 +17,17 @@ import (
 	"context"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/infoschema"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/planner"
-	"github.com/pingcap/tidb/planner/core"
-	"github.com/pingcap/tidb/session"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/sessionctx/stmtctx"
-	"github.com/pingcap/tidb/util/testleak"
+	"github.com/cookieY/parser"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/infoschema"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/planner"
+	"github.com/cookieY/tidb/planner/core"
+	"github.com/cookieY/tidb/session"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/sessionctx/stmtctx"
+	"github.com/cookieY/tidb/util/testleak"
 )
 
 var _ = Suite(&testPlanSuite{})

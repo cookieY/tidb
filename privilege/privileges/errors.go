@@ -14,8 +14,8 @@
 package privileges
 
 import (
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/parser/terror"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/parser/terror"
 )
 
 // privilege error codes.

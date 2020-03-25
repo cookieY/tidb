@@ -18,8 +18,8 @@ import (
 
 	"github.com/pingcap/check"
 	"github.com/pingcap/errors"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/session"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/session"
 )
 
 // SessionExecInGoroutine export for testing.

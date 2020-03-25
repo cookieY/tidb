@@ -20,10 +20,10 @@ import (
 
 	"github.com/coreos/etcd/clientv3"
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/tidb/ddl/util"
-	"github.com/pingcap/tidb/sessionctx"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/tidb/ddl/util"
+	"github.com/cookieY/tidb/sessionctx"
 )
 
 var _ util.SchemaSyncer = &MockSchemaSyncer{}

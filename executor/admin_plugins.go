@@ -16,10 +16,10 @@ package executor
 import (
 	"context"
 
-	"github.com/pingcap/tidb/domain"
-	"github.com/pingcap/tidb/planner/core"
-	"github.com/pingcap/tidb/plugin"
-	"github.com/pingcap/tidb/util/chunk"
+	"github.com/cookieY/tidb/domain"
+	"github.com/cookieY/tidb/planner/core"
+	"github.com/cookieY/tidb/plugin"
+	"github.com/cookieY/tidb/util/chunk"
 )
 
 // AdminPluginsExec indicates AdminPlugins executor.

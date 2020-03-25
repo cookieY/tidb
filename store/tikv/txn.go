@@ -22,11 +22,11 @@ import (
 	"github.com/dgryski/go-farm"
 	"github.com/pingcap/errors"
 	"github.com/pingcap/failpoint"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/metrics"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/util/execdetails"
-	"github.com/pingcap/tidb/util/logutil"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/metrics"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/util/execdetails"
+	"github.com/cookieY/tidb/util/logutil"
 	"go.uber.org/zap"
 )
 

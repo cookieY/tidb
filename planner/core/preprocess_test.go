@@ -18,16 +18,16 @@ import (
 
 	. "github.com/pingcap/check"
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/ddl"
-	"github.com/pingcap/tidb/infoschema"
-	"github.com/pingcap/tidb/planner/core"
-	"github.com/pingcap/tidb/session"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/testleak"
+	"github.com/cookieY/parser"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/ddl"
+	"github.com/cookieY/tidb/infoschema"
+	"github.com/cookieY/tidb/planner/core"
+	"github.com/cookieY/tidb/session"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/testleak"
 )
 
 var _ = Suite(&testValidatorSuite{})

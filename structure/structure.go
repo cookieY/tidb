@@ -14,8 +14,8 @@
 package structure
 
 import (
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/kv"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/kv"
 )
 
 // structure error codes.

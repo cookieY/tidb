@@ -17,8 +17,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/pingcap/tidb/plugin"
-	"github.com/pingcap/tidb/sessionctx/variable"
+	"github.com/cookieY/tidb/plugin"
+	"github.com/cookieY/tidb/sessionctx/variable"
 )
 
 // Validate implements TiDB plugin's Validate SPI.

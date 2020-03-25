@@ -17,9 +17,9 @@ import (
 	"fmt"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/table"
-	"github.com/pingcap/tidb/util/testkit"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/table"
+	"github.com/cookieY/tidb/util/testkit"
 )
 
 func (s *testSuite3) TestInsertOnDuplicateKey(c *C) {

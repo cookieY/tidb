@@ -16,9 +16,9 @@ package aggregation
 import (
 	"strings"
 
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/tidb/expression"
-	"github.com/pingcap/tidb/sessionctx"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/tidb/expression"
+	"github.com/cookieY/tidb/sessionctx"
 )
 
 // WindowFuncDesc describes a window function signature, only used in planner.

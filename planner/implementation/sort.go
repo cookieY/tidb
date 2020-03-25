@@ -16,8 +16,8 @@ package implementation
 import (
 	"math"
 
-	plannercore "github.com/pingcap/tidb/planner/core"
-	"github.com/pingcap/tidb/planner/memo"
+	plannercore "github.com/cookieY/tidb/planner/core"
+	"github.com/cookieY/tidb/planner/memo"
 )
 
 // SortImpl implementation of PhysicalSort.

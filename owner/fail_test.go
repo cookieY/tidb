@@ -24,9 +24,9 @@ import (
 	"github.com/coreos/etcd/clientv3"
 	. "github.com/pingcap/check"
 	"github.com/pingcap/failpoint"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/util/logutil"
-	"github.com/pingcap/tidb/util/testleak"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/util/logutil"
+	"github.com/cookieY/tidb/util/testleak"
 	"google.golang.org/grpc"
 )
 
@@ -75,9 +75,9 @@ func (s *testSuite) TestFailNewSession(c *C) {
 			if cli != nil {
 				cli.Close()
 			}
-			c.Assert(failpoint.Disable("github.com/pingcap/tidb/owner/closeClient"), IsNil)
+			c.Assert(failpoint.Disable("github.com/cookieY/tidb/owner/closeClient"), IsNil)
 		}()
-		c.Assert(failpoint.Enable("github.com/pingcap/tidb/owner/closeClient", `return(true)`), IsNil)
+		c.Assert(failpoint.Enable("github.com/cookieY/tidb/owner/closeClient", `return(true)`), IsNil)
 		_, err = NewSession(context.Background(), "fail_new_serssion", cli, retryCnt, ManagerSessionTTL)
 		isContextDone := terror.ErrorEqual(grpc.ErrClientConnClosing, err) || terror.ErrorEqual(context.Canceled, err)
 		c.Assert(isContextDone, IsTrue, Commentf("err %v", err))
@@ -93,9 +93,9 @@ func (s *testSuite) TestFailNewSession(c *C) {
 			if cli != nil {
 				cli.Close()
 			}
-			c.Assert(failpoint.Disable("github.com/pingcap/tidb/owner/closeGrpc"), IsNil)
+			c.Assert(failpoint.Disable("github.com/cookieY/tidb/owner/closeGrpc"), IsNil)
 		}()
-		c.Assert(failpoint.Enable("github.com/pingcap/tidb/owner/closeGrpc", `return(true)`), IsNil)
+		c.Assert(failpoint.Enable("github.com/cookieY/tidb/owner/closeGrpc", `return(true)`), IsNil)
 		_, err = NewSession(context.Background(), "fail_new_serssion", cli, retryCnt, ManagerSessionTTL)
 		isContextDone := terror.ErrorEqual(grpc.ErrClientConnClosing, err) || terror.ErrorEqual(context.Canceled, err)
 		c.Assert(isContextDone, IsTrue, Commentf("err %v", err))

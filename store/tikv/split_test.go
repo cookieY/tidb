@@ -17,8 +17,8 @@ import (
 	"context"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/store/mockstore/mocktikv"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/store/mockstore/mocktikv"
 )
 
 type testSplitSuite struct {

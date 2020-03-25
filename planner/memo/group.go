@@ -17,7 +17,7 @@ import (
 	"container/list"
 	"fmt"
 
-	"github.com/pingcap/tidb/planner/property"
+	"github.com/cookieY/tidb/planner/property"
 )
 
 // Group is short for expression Group, which is used to store all the

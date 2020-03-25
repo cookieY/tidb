@@ -21,16 +21,16 @@ import (
 	"unsafe"
 
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/expression"
-	plannercore "github.com/pingcap/tidb/planner/core"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util"
-	"github.com/pingcap/tidb/util/chunk"
-	"github.com/pingcap/tidb/util/codec"
-	"github.com/pingcap/tidb/util/memory"
-	"github.com/pingcap/tidb/util/mvmap"
-	"github.com/pingcap/tidb/util/stringutil"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/expression"
+	plannercore "github.com/cookieY/tidb/planner/core"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util"
+	"github.com/cookieY/tidb/util/chunk"
+	"github.com/cookieY/tidb/util/codec"
+	"github.com/cookieY/tidb/util/memory"
+	"github.com/cookieY/tidb/util/mvmap"
+	"github.com/cookieY/tidb/util/stringutil"
 )
 
 var (

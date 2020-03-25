@@ -17,10 +17,10 @@ import (
 	"fmt"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/tidb/statistics"
-	"github.com/pingcap/tidb/statistics/handle"
-	"github.com/pingcap/tidb/util/testkit"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/tidb/statistics"
+	"github.com/cookieY/tidb/statistics/handle"
+	"github.com/cookieY/tidb/util/testkit"
 )
 
 func (s *testStatsSuite) TestConversion(c *C) {

@@ -19,7 +19,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/pingcap/tidb/sessionctx/variable"
+	"github.com/cookieY/tidb/sessionctx/variable"
 )
 
 func TestLoadPluginSuccess(t *testing.T) {

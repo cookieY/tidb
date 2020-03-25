@@ -23,12 +23,12 @@ import (
 
 	. "github.com/pingcap/check"
 	"github.com/pingcap/failpoint"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/domain"
-	"github.com/pingcap/tidb/session"
-	. "github.com/pingcap/tidb/store/tikv"
-	"github.com/pingcap/tidb/util/mock"
-	"github.com/pingcap/tidb/util/testkit"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/domain"
+	"github.com/cookieY/tidb/session"
+	. "github.com/cookieY/tidb/store/tikv"
+	"github.com/cookieY/tidb/util/mock"
+	"github.com/cookieY/tidb/util/testkit"
 )
 
 var _ = Suite(new(testSQLSuite))
@@ -55,7 +55,7 @@ func (s *testSQLSuite) TearDownSuite(c *C) {
 
 func (s *testSQLSuite) TestInsertSleepOverMaxTxnTime(c *C) {
 	defer func() {
-		c.Assert(failpoint.Disable("github.com/pingcap/tidb/store/tmpMaxTxnTime"), IsNil)
+		c.Assert(failpoint.Disable("github.com/cookieY/tidb/store/tmpMaxTxnTime"), IsNil)
 	}()
 	se, err := session.CreateSession4Test(s.store)
 	c.Assert(err, IsNil)
@@ -63,7 +63,7 @@ func (s *testSQLSuite) TestInsertSleepOverMaxTxnTime(c *C) {
 	c.Assert(err, IsNil)
 	_, err = se.Execute(context.Background(), "create table test.t(a int)")
 	c.Assert(err, IsNil)
-	c.Assert(failpoint.Enable("github.com/pingcap/tidb/store/tmpMaxTxnTime", `return(2)->return(0)`), IsNil)
+	c.Assert(failpoint.Enable("github.com/cookieY/tidb/store/tmpMaxTxnTime", `return(2)->return(0)`), IsNil)
 	start := time.Now()
 	_, err = se.Execute(context.Background(), "insert into test.t (a) select sleep(3)")
 	c.Assert(err, IsNil)
@@ -77,11 +77,11 @@ func (s *testSQLSuite) TestFailBusyServerCop(c *C) {
 	var wg sync.WaitGroup
 	wg.Add(2)
 
-	c.Assert(failpoint.Enable("github.com/pingcap/tidb/store/mockstore/mocktikv/rpcServerBusy", `return(true)`), IsNil)
+	c.Assert(failpoint.Enable("github.com/cookieY/tidb/store/mockstore/mocktikv/rpcServerBusy", `return(true)`), IsNil)
 	go func() {
 		defer wg.Done()
 		time.Sleep(time.Millisecond * 100)
-		c.Assert(failpoint.Disable("github.com/pingcap/tidb/store/mockstore/mocktikv/rpcServerBusy"), IsNil)
+		c.Assert(failpoint.Disable("github.com/cookieY/tidb/store/mockstore/mocktikv/rpcServerBusy"), IsNil)
 	}()
 
 	go func() {

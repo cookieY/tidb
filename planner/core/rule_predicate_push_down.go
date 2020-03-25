@@ -15,12 +15,12 @@ package core
 import (
 	"context"
 
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/expression"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/types"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/expression"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/types"
 )
 
 type ppdSolver struct{}
@@ -431,7 +431,7 @@ func deriveOtherConditions(p *LogicalJoin, deriveLeft bool, deriveRight bool) (l
 			// For LeftOuterSemiJoin and AntiLeftOuterSemiJoin, we can actually generate
 			// `col is not null` according to expressions in `OtherConditions` now, but we
 			// are putting column equal condition converted from `in (subq)` into
-			// `OtherConditions`(@sa https://github.com/pingcap/tidb/pull/9051), then it would
+			// `OtherConditions`(@sa https://github.com/cookieY/tidb/pull/9051), then it would
 			// cause wrong results, so we disable this optimization for outer semi joins now.
 			// TODO enable this optimization for outer semi joins later by checking whether
 			// condition in `OtherConditions` is converted from `in (subq)`.

@@ -18,8 +18,8 @@ import (
 	"time"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/tidb/util/mock"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/tidb/util/mock"
 )
 
 var _ = Suite(&testStatSuite{})

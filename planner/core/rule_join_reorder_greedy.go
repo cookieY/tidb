@@ -17,8 +17,8 @@ import (
 	"math"
 	"sort"
 
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/tidb/expression"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/tidb/expression"
 )
 
 type joinReorderGreedySolver struct {

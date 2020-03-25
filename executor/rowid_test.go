@@ -15,7 +15,7 @@ package executor_test
 
 import (
 	. "github.com/pingcap/check"
-	"github.com/pingcap/tidb/util/testkit"
+	"github.com/cookieY/tidb/util/testkit"
 )
 
 func (s *testSuite1) TestExportRowID(c *C) {

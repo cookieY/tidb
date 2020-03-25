@@ -15,9 +15,9 @@ package types
 
 import (
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/charset"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/util/testleak"
+	"github.com/cookieY/parser/charset"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/util/testleak"
 )
 
 var _ = Suite(&testFieldTypeSuite{})

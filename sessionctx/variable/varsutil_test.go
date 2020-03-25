@@ -19,11 +19,11 @@ import (
 	"time"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/config"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/testleak"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/config"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/testleak"
 )
 
 var _ = Suite(&testVarsutilSuite{})

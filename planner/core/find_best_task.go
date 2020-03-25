@@ -16,17 +16,17 @@ package core
 import (
 	"math"
 
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/expression"
-	"github.com/pingcap/tidb/infoschema"
-	"github.com/pingcap/tidb/planner/property"
-	"github.com/pingcap/tidb/sessionctx/stmtctx"
-	"github.com/pingcap/tidb/statistics"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/chunk"
-	"github.com/pingcap/tidb/util/ranger"
-	"github.com/pingcap/tidb/util/set"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/expression"
+	"github.com/cookieY/tidb/infoschema"
+	"github.com/cookieY/tidb/planner/property"
+	"github.com/cookieY/tidb/sessionctx/stmtctx"
+	"github.com/cookieY/tidb/statistics"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/chunk"
+	"github.com/cookieY/tidb/util/ranger"
+	"github.com/cookieY/tidb/util/set"
 	"golang.org/x/tools/container/intsets"
 )
 
@@ -430,7 +430,7 @@ func isCoveringIndex(columns []*expression.Column, indexColumns []*model.IndexCo
 		for _, indexCol := range indexColumns {
 			isFullLen := indexCol.Length == types.UnspecifiedLength || indexCol.Length == col.RetType.Flen
 			// We use col.OrigColName instead of col.ColName.
-			// Related issue: https://github.com/pingcap/tidb/issues/9636.
+			// Related issue: https://github.com/cookieY/tidb/issues/9636.
 			if col.OrigColName.L == indexCol.Name.L && isFullLen {
 				isIndexColumn = true
 				break

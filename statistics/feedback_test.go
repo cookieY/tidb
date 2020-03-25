@@ -17,9 +17,9 @@ import (
 	"bytes"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util/codec"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util/codec"
 )
 
 var _ = Suite(&testFeedbackSuite{})

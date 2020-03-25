@@ -17,11 +17,11 @@ import (
 	"context"
 
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/tidb/bindinfo"
-	"github.com/pingcap/tidb/domain"
-	plannercore "github.com/pingcap/tidb/planner/core"
-	"github.com/pingcap/tidb/util/chunk"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/tidb/bindinfo"
+	"github.com/cookieY/tidb/domain"
+	plannercore "github.com/cookieY/tidb/planner/core"
+	"github.com/cookieY/tidb/util/chunk"
 )
 
 // SQLBindExec represents a bind executor.

@@ -17,7 +17,7 @@ import (
 	"context"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/tidb/util/testkit"
+	"github.com/cookieY/tidb/util/testkit"
 )
 
 func (s *testSuite) TestBatchInsertWithOnDuplicate(c *C) {

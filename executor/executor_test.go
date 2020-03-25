@@ -32,45 +32,45 @@ import (
 	"github.com/pingcap/failpoint"
 	pb "github.com/pingcap/kvproto/pkg/kvrpcpb"
 	"github.com/pingcap/log"
-	"github.com/pingcap/parser"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/config"
-	"github.com/pingcap/tidb/ddl"
-	"github.com/pingcap/tidb/domain"
-	"github.com/pingcap/tidb/executor"
-	"github.com/pingcap/tidb/expression"
-	"github.com/pingcap/tidb/infoschema"
-	"github.com/pingcap/tidb/kv"
-	"github.com/pingcap/tidb/meta"
-	"github.com/pingcap/tidb/meta/autoid"
-	"github.com/pingcap/tidb/planner"
-	plannercore "github.com/pingcap/tidb/planner/core"
-	"github.com/pingcap/tidb/session"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/sessionctx/stmtctx"
-	"github.com/pingcap/tidb/sessionctx/variable"
-	"github.com/pingcap/tidb/statistics"
-	"github.com/pingcap/tidb/store/mockstore"
-	"github.com/pingcap/tidb/store/mockstore/mocktikv"
-	"github.com/pingcap/tidb/store/tikv"
-	"github.com/pingcap/tidb/store/tikv/oracle"
-	"github.com/pingcap/tidb/store/tikv/tikvrpc"
-	"github.com/pingcap/tidb/table"
-	"github.com/pingcap/tidb/table/tables"
-	"github.com/pingcap/tidb/tablecodec"
-	"github.com/pingcap/tidb/types"
-	"github.com/pingcap/tidb/util"
-	"github.com/pingcap/tidb/util/admin"
-	"github.com/pingcap/tidb/util/codec"
-	"github.com/pingcap/tidb/util/gcutil"
-	"github.com/pingcap/tidb/util/logutil"
-	"github.com/pingcap/tidb/util/mock"
-	"github.com/pingcap/tidb/util/testkit"
-	"github.com/pingcap/tidb/util/testleak"
-	"github.com/pingcap/tidb/util/testutil"
-	"github.com/pingcap/tidb/util/timeutil"
+	"github.com/cookieY/parser"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/config"
+	"github.com/cookieY/tidb/ddl"
+	"github.com/cookieY/tidb/domain"
+	"github.com/cookieY/tidb/executor"
+	"github.com/cookieY/tidb/expression"
+	"github.com/cookieY/tidb/infoschema"
+	"github.com/cookieY/tidb/kv"
+	"github.com/cookieY/tidb/meta"
+	"github.com/cookieY/tidb/meta/autoid"
+	"github.com/cookieY/tidb/planner"
+	plannercore "github.com/cookieY/tidb/planner/core"
+	"github.com/cookieY/tidb/session"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/sessionctx/stmtctx"
+	"github.com/cookieY/tidb/sessionctx/variable"
+	"github.com/cookieY/tidb/statistics"
+	"github.com/cookieY/tidb/store/mockstore"
+	"github.com/cookieY/tidb/store/mockstore/mocktikv"
+	"github.com/cookieY/tidb/store/tikv"
+	"github.com/cookieY/tidb/store/tikv/oracle"
+	"github.com/cookieY/tidb/store/tikv/tikvrpc"
+	"github.com/cookieY/tidb/table"
+	"github.com/cookieY/tidb/table/tables"
+	"github.com/cookieY/tidb/tablecodec"
+	"github.com/cookieY/tidb/types"
+	"github.com/cookieY/tidb/util"
+	"github.com/cookieY/tidb/util/admin"
+	"github.com/cookieY/tidb/util/codec"
+	"github.com/cookieY/tidb/util/gcutil"
+	"github.com/cookieY/tidb/util/logutil"
+	"github.com/cookieY/tidb/util/mock"
+	"github.com/cookieY/tidb/util/testkit"
+	"github.com/cookieY/tidb/util/testleak"
+	"github.com/cookieY/tidb/util/testutil"
+	"github.com/cookieY/tidb/util/timeutil"
 	"github.com/pingcap/tipb/go-tipb"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
@@ -949,7 +949,7 @@ func (s *testSuiteP1) TestOrderBy(c *C) {
 	tk.MustExec("create table t (c1 int, c2 int, c3 varchar(20))")
 	tk.MustExec("insert into t values (1, 2, 'abc'), (2, 1, 'bcd')")
 
-	// Fix issue https://github.com/pingcap/tidb/issues/337
+	// Fix issue https://github.com/cookieY/tidb/issues/337
 	tk.MustQuery("select c1 as a, c1 as b from t order by c1").Check(testkit.Rows("1 1", "2 2"))
 
 	tk.MustQuery("select c1 as a, t.c1 as a from t order by a desc").Check(testkit.Rows("2 2", "1 1"))
@@ -995,7 +995,7 @@ func (s *testSuiteP1) TestSelectErrorRow(c *C) {
 	c.Assert(err, NotNil)
 }
 
-// TestIssue2612 is related with https://github.com/pingcap/tidb/issues/2612
+// TestIssue2612 is related with https://github.com/cookieY/tidb/issues/2612
 func (s *testSuiteP1) TestIssue2612(c *C) {
 	tk := testkit.NewTestKit(c, s.store)
 	tk.MustExec("use test")
@@ -1013,7 +1013,7 @@ func (s *testSuiteP1) TestIssue2612(c *C) {
 	rs.Close()
 }
 
-// TestIssue345 is related with https://github.com/pingcap/tidb/issues/345
+// TestIssue345 is related with https://github.com/cookieY/tidb/issues/345
 func (s *testSuiteP1) TestIssue345(c *C) {
 	tk := testkit.NewTestKit(c, s.store)
 	tk.MustExec("use test")
@@ -2081,8 +2081,8 @@ func (s *testSuiteP1) TestPointGetRepeatableRead(c *C) {
 	tk2.MustExec("use test")
 
 	var (
-		step1 = "github.com/pingcap/tidb/executor/pointGetRepeatableReadTest-step1"
-		step2 = "github.com/pingcap/tidb/executor/pointGetRepeatableReadTest-step2"
+		step1 = "github.com/cookieY/tidb/executor/pointGetRepeatableReadTest-step1"
+		step2 = "github.com/cookieY/tidb/executor/pointGetRepeatableReadTest-step2"
 	)
 
 	c.Assert(failpoint.Enable(step1, "return"), IsNil)
@@ -2107,7 +2107,7 @@ func (s *testSuiteP1) TestPointGetRepeatableRead(c *C) {
 }
 
 func (s *testSuite4) TestSplitRegionTimeout(c *C) {
-	c.Assert(failpoint.Enable("github.com/pingcap/tidb/executor/mockSplitRegionTimeout", `return(true)`), IsNil)
+	c.Assert(failpoint.Enable("github.com/cookieY/tidb/executor/mockSplitRegionTimeout", `return(true)`), IsNil)
 	tk := testkit.NewTestKit(c, s.store)
 	tk.MustExec("use test")
 	tk.MustExec("drop table if exists t")
@@ -2116,7 +2116,7 @@ func (s *testSuite4) TestSplitRegionTimeout(c *C) {
 	tk.MustExec(`set @@tidb_wait_split_region_timeout=1`)
 	// result 0 0 means split 0 region and 0 region finish scatter regions before timeout.
 	tk.MustQuery(`split table t between (0) and (10000) regions 10`).Check(testkit.Rows("0 0"))
-	c.Assert(failpoint.Disable("github.com/pingcap/tidb/executor/mockSplitRegionTimeout"), IsNil)
+	c.Assert(failpoint.Disable("github.com/cookieY/tidb/executor/mockSplitRegionTimeout"), IsNil)
 }
 
 func (s *testSuiteP1) TestRow(c *C) {
@@ -2235,7 +2235,7 @@ func (s *testSuiteP1) TestColumnName(c *C) {
 	}
 	rs.Close()
 
-	// Test issue https://github.com/pingcap/tidb/issues/9639 .
+	// Test issue https://github.com/cookieY/tidb/issues/9639 .
 	// Both window function and expression appear in final result field.
 	tk.MustExec("set @@tidb_enable_window_function = 1")
 	rs, err = tk.Exec("select 1+1, row_number() over() num from t")
@@ -2426,7 +2426,7 @@ func (s *testSuite) TestTimestampTimeZone(c *C) {
 		tk.MustQuery("select * from t").Check(testkit.Rows(tt.expect))
 	}
 
-	// For issue https://github.com/pingcap/tidb/issues/3467
+	// For issue https://github.com/cookieY/tidb/issues/3467
 	tk.MustExec("drop table if exists t1")
 	tk.MustExec(`CREATE TABLE t1 (
  	      id bigint(20) NOT NULL AUTO_INCREMENT,
@@ -2445,7 +2445,7 @@ func (s *testSuite) TestTimestampTimeZone(c *C) {
 	r = tk.MustQuery("select * from t1 where datetime='2014-03-31 08:57:10';")
 	r.Check(testkit.Rows("123381351 1734 2014-03-31 08:57:10 127.0.0.1")) // Cover IndexLookupExec
 
-	// For issue https://github.com/pingcap/tidb/issues/3485
+	// For issue https://github.com/cookieY/tidb/issues/3485
 	tk.MustExec("set time_zone = 'Asia/Shanghai'")
 	tk.MustExec("drop table if exists t1")
 	tk.MustExec(`CREATE TABLE t1 (
@@ -2663,7 +2663,7 @@ func (s *testSuite) TestEmptyEnum(c *C) {
 	tk.MustQuery("select * from t").Check(testkit.Rows("", "", "<nil>"))
 }
 
-// TestIssue4024 This tests https://github.com/pingcap/tidb/issues/4024
+// TestIssue4024 This tests https://github.com/cookieY/tidb/issues/4024
 func (s *testSuite) TestIssue4024(c *C) {
 	tk := testkit.NewTestKit(c, s.store)
 	tk.MustExec("create database test2")
@@ -4374,9 +4374,9 @@ func (s *testRecoverTable) SetUpSuite(c *C) {
 }
 
 func (s *testRecoverTable) TestRecoverTable(c *C) {
-	c.Assert(failpoint.Enable("github.com/pingcap/tidb/meta/autoid/mockAutoIDChange", `return(true)`), IsNil)
+	c.Assert(failpoint.Enable("github.com/cookieY/tidb/meta/autoid/mockAutoIDChange", `return(true)`), IsNil)
 	defer func() {
-		c.Assert(failpoint.Disable("github.com/pingcap/tidb/meta/autoid/mockAutoIDChange"), IsNil)
+		c.Assert(failpoint.Disable("github.com/cookieY/tidb/meta/autoid/mockAutoIDChange"), IsNil)
 	}()
 	tk := testkit.NewTestKit(c, s.store)
 	tk.MustExec("create database if not exists test_recover")

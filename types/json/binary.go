@@ -26,8 +26,8 @@ import (
 	"unicode/utf8"
 
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/util/hack"
+	"github.com/cookieY/parser/terror"
+	"github.com/cookieY/tidb/util/hack"
 )
 
 /*

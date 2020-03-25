@@ -22,7 +22,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/pingcap/tidb/util/logutil"
+	"github.com/cookieY/tidb/util/logutil"
 	"go.uber.org/zap"
 )
 

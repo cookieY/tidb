@@ -17,11 +17,11 @@ import (
 	"context"
 
 	. "github.com/pingcap/check"
-	"github.com/pingcap/parser"
-	"github.com/pingcap/parser/model"
-	"github.com/pingcap/tidb/infoschema"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/util/testleak"
+	"github.com/cookieY/parser"
+	"github.com/cookieY/parser/model"
+	"github.com/cookieY/tidb/infoschema"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/util/testleak"
 )
 
 var _ = Suite(&testIndexMergeSuite{})

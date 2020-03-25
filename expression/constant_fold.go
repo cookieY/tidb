@@ -14,9 +14,9 @@
 package expression
 
 import (
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/tidb/util/chunk"
-	"github.com/pingcap/tidb/util/logutil"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/tidb/util/chunk"
+	"github.com/cookieY/tidb/util/logutil"
 	"go.uber.org/zap"
 )
 

@@ -16,10 +16,10 @@ package kv
 import (
 	"context"
 
-	"github.com/pingcap/tidb/config"
-	"github.com/pingcap/tidb/store/tikv/oracle"
-	"github.com/pingcap/tidb/util/execdetails"
-	"github.com/pingcap/tidb/util/memory"
+	"github.com/cookieY/tidb/config"
+	"github.com/cookieY/tidb/store/tikv/oracle"
+	"github.com/cookieY/tidb/util/execdetails"
+	"github.com/cookieY/tidb/util/memory"
 )
 
 // Transaction options

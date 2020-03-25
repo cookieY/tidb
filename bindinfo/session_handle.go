@@ -16,10 +16,10 @@ package bindinfo
 import (
 	"time"
 
-	"github.com/pingcap/parser"
-	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/tidb/metrics"
-	"github.com/pingcap/tidb/types"
+	"github.com/cookieY/parser"
+	"github.com/cookieY/parser/mysql"
+	"github.com/cookieY/tidb/metrics"
+	"github.com/cookieY/tidb/types"
 )
 
 // SessionHandle is used to handle all session sql bind operations.

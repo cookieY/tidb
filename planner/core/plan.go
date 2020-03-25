@@ -19,11 +19,11 @@ import (
 	"strconv"
 
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/ast"
-	"github.com/pingcap/tidb/expression"
-	"github.com/pingcap/tidb/planner/property"
-	"github.com/pingcap/tidb/sessionctx"
-	"github.com/pingcap/tidb/util/stringutil"
+	"github.com/cookieY/parser/ast"
+	"github.com/cookieY/tidb/expression"
+	"github.com/cookieY/tidb/planner/property"
+	"github.com/cookieY/tidb/sessionctx"
+	"github.com/cookieY/tidb/util/stringutil"
 	"github.com/pingcap/tipb/go-tipb"
 )
 

@@ -13,7 +13,7 @@
 
 package domain
 
-import "github.com/pingcap/tidb/sessionctx"
+import "github.com/cookieY/tidb/sessionctx"
 
 // domainKeyType is a dummy type to avoid naming collision in context.
 type domainKeyType int
